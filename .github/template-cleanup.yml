@@ -1,0 +1,21 @@
+# Template cleanup configuration
+# This file is used when creating a new repository from this template
+
+name: USWDS 11ty Template
+description: A modern, accessible static site template using 11ty and USWDS
+
+# Files to remove when using as template
+cleanup:
+  - CHANGELOG.md
+  - .github/template-cleanup.yml
+
+# Placeholders to replace
+replacements:
+  - placeholder: "uswds-11ty-template"
+    prompt: "Enter your project name (kebab-case)"
+  - placeholder: "USWDS 11ty Template" 
+    prompt: "Enter your project title"
+  - placeholder: "williamzujkowski"
+    prompt: "Enter your GitHub username"
+  - placeholder: "https://williamzujkowski.github.io/uswds-11ty-template/"
+    prompt: "Enter your site URL"
