@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+---
+
+<div class="grid-row grid-gap">
+  {% if sidenav %}
+  <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+    <nav aria-label="Secondary navigation">
+      <ul class="usa-sidenav">
+        {% for item in collections.nav %}
+        <li class="usa-sidenav__item">
+          <a href="{{ item.url }}" {% if item.url == page.url %}class="usa-current" aria-current="page"{% endif %}>
+            {{ item.data.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+  {% endif %}
+  
+  <div class="usa-layout-docs__main desktop:grid-col-{% if sidenav %}9{% else %}12{% endif %}">
+    {% if hero %}
+    <section class="usa-hero" aria-label="Introduction">
+      <div class="grid-container">
+        <div class="usa-hero__callout">
+          <h1 class="usa-hero__heading">
+            <span class="usa-hero__heading--alt">{{ hero.alt }}</span>
+            {{ hero.heading }}
+          </h1>
+          <p>{{ hero.content }}</p>
+          {% if hero.button %}
+          <a class="usa-button" href="{{ hero.button.href }}">{{ hero.button.text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% else %}
+    <h1 class="margin-top-0">{{ title }}</h1>
+    {% endif %}
+    
+    {% if lead %}
+    <p class="usa-intro">{{ lead }}</p>
+    {% endif %}
+    
+    <div class="usa-prose">
+      {{ content | safe }}
+    </div>
+    
+    {% if lastModified %}
+    <div class="margin-top-5 padding-top-3 border-top-1px border-base-lighter">
+      <p class="text-base font-body-3xs">Last updated: {{ page.date | dateFormat('long') }}</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

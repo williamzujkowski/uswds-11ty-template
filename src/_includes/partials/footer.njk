@@ -1,0 +1,68 @@
+<footer class="usa-footer">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+          <div class="mobile-lg:grid-col-auto">
+            <img class="usa-footer__logo-img" src="/assets/img/logo.png" alt="{{ site.title }} logo">
+          </div>
+          <div class="mobile-lg:grid-col-auto">
+            <p class="usa-footer__logo-heading">{{ site.title }}</p>
+          </div>
+        </div>
+        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+          <div class="usa-footer__social-links grid-row grid-gap-1">
+            {% if site.social.facebook %}
+            <div class="grid-col-auto">
+              <a class="usa-social-link" href="{{ site.social.facebook }}" aria-label="Facebook">
+                <img class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/facebook.svg" alt="">
+              </a>
+            </div>
+            {% endif %}
+            {% if site.social.twitter %}
+            <div class="grid-col-auto">
+              <a class="usa-social-link" href="{{ site.social.twitter }}" aria-label="Twitter">
+                <img class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/twitter.svg" alt="">
+              </a>
+            </div>
+            {% endif %}
+            {% if site.social.youtube %}
+            <div class="grid-col-auto">
+              <a class="usa-social-link" href="{{ site.social.youtube }}" aria-label="YouTube">
+                <img class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/youtube.svg" alt="">
+              </a>
+            </div>
+            {% endif %}
+            {% if site.social.instagram %}
+            <div class="grid-col-auto">
+              <a class="usa-social-link" href="{{ site.social.instagram }}" aria-label="Instagram">
+                <img class="usa-social-link__icon" src="/assets/uswds/img/usa-icons/instagram.svg" alt="">
+              </a>
+            </div>
+            {% endif %}
+          </div>
+          <p class="usa-footer__contact-heading">Contact {{ site.author }}</p>
+          <address class="usa-footer__address">
+            <div class="usa-footer__contact-info grid-row grid-gap">
+              <div class="grid-col-auto">
+                <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+              </div>
+              <div class="grid-col-auto">
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+      <nav class="usa-footer__nav" aria-label="Footer navigation">
+        <ul class="grid-row grid-gap">
+          {% for item in site.navigation.footer %}
+          <li class="mobile-lg:grid-col-auto usa-footer__primary-content">
+            <a class="usa-footer__primary-link" href="{{ item.href }}">{{ item.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

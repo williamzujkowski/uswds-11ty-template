@@ -1,0 +1,68 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": ["warn"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-debugger": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "warn",
+    "no-extra-semi": "error",
+    "no-func-assign": "error",
+    "no-irregular-whitespace": "error",
+    "no-unreachable": "warn",
+    "curly": "error",
+    "dot-notation": "error",
+    "eqeqeq": ["error", "always"],
+    "no-empty-function": "warn",
+    "no-multi-spaces": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-trailing-spaces": "error",
+    "default-case": "warn",
+    "no-fallthrough": "error",
+    "no-undefined": "error",
+    "no-use-before-define": "error",
+    "no-shadow": "warn",
+    "array-bracket-spacing": ["error", "never"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-style": ["error", "last"],
+    "computed-property-spacing": ["error", "never"],
+    "consistent-this": ["error", "that"],
+    "func-call-spacing": ["error", "never"],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "max-len": ["warn", { "code": 100, "ignoreUrls": true }],
+    "new-cap": ["error", { "newIsCap": true, "capIsNew": false }],
+    "no-mixed-operators": "error",
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-whitespace-before-property": "error",
+    "object-curly-spacing": ["error", "always"],
+    "quote-props": ["error", "as-needed"],
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": "error",
+    "space-unary-ops": ["error", { "words": true, "nonwords": false }]
+  },
+  "ignorePatterns": [
+    "_site/**",
+    "node_modules/**",
+    "*.min.js"
+  ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="min-height-100">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>{{ title or site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title or site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GovernmentOrganization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/img/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "{{ site.phone }}",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+  
+  {% if site.analytics.dap %}
+  <!-- Digital Analytics Program -->
+  <script async type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=AGENCY" id="_fed_an_ua_tag"></script>
+  {% endif %}
+  
+  {% if site.analytics.ga %}
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.ga }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analytics.ga }}');
+  </script>
+  {% endif %}
+</head>
+<body class="min-height-100 display-flex flex-column">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  
+  {% include "partials/banner.njk" %}
+  {% include "partials/header.njk" %}
+  
+  <main id="main-content" class="usa-layout-docs usa-section flex-auto">
+    <div class="grid-container">
+      {{ content | safe }}
+    </div>
+  </main>
+  
+  {% include "partials/footer.njk" %}
+  
+  <!-- USWDS JavaScript -->
+  <script src="/assets/uswds/js/uswds.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

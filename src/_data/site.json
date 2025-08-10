@@ -1,0 +1,70 @@
+{
+  "title": "USWDS 11ty Template",
+  "description": "A modern, accessible website built with 11ty and the U.S. Web Design System",
+  "url": "https://example.gov",
+  "author": "Your Agency",
+  "email": "contact@example.gov",
+  "phone": "1-800-123-4567",
+  "address": {
+    "street": "1234 Government Way",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20500"
+  },
+  "social": {
+    "twitter": "https://twitter.com/youragency",
+    "facebook": "https://facebook.com/youragency",
+    "youtube": "https://youtube.com/youragency",
+    "instagram": "https://instagram.com/youragency"
+  },
+  "analytics": {
+    "dap": true,
+    "ga": ""
+  },
+  "search": {
+    "endpoint": "https://search.usa.gov/search",
+    "affiliate": "your-site-handle"
+  },
+  "navigation": {
+    "primary": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "About",
+        "href": "/about/"
+      },
+      {
+        "text": "Services",
+        "href": "/services/"
+      },
+      {
+        "text": "Resources",
+        "href": "/resources/"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact/"
+      }
+    ],
+    "footer": [
+      {
+        "text": "Privacy Policy",
+        "href": "/privacy/"
+      },
+      {
+        "text": "Accessibility",
+        "href": "/accessibility/"
+      },
+      {
+        "text": "FOIA",
+        "href": "/foia/"
+      },
+      {
+        "text": "No FEAR Act",
+        "href": "/no-fear-act/"
+      }
+    ]
+  }
+}

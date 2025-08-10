@@ -1,0 +1,14 @@
+# www.robotstxt.org
+
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: https://example.gov/sitemap.xml
+
+# Disallow specific paths if needed
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /_drafts/
+
+# Crawl-delay for bots that support it
+Crawl-delay: 1

@@ -1,0 +1,53 @@
+{
+  "name": "uswds-11ty-template",
+  "version": "1.0.0",
+  "description": "An 11ty (Eleventy) static site generator template integrated with the U.S. Web Design System (USWDS)",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "build": "npm run clean && npm run sass:build && npx @11ty/eleventy",
+    "clean": "rm -rf _site",
+    "start": "npm run sass:watch & npx @11ty/eleventy --serve",
+    "serve": "npx @11ty/eleventy --serve",
+    "sass:build": "sass src/_styles/main.scss _site/assets/css/main.css --load-path=node_modules/@uswds/uswds/packages --style=compressed",
+    "sass:watch": "sass src/_styles/main.scss _site/assets/css/main.css --load-path=node_modules/@uswds/uswds/packages --watch",
+    "lint:js": "eslint src/**/*.js",
+    "lint:scss": "stylelint src/_styles/**/*.scss",
+    "format": "prettier --write .",
+    "test:a11y": "pa11y --runner axe --runner htmlcs _site",
+    "test:lighthouse": "lighthouse http://localhost:8080 --output html --output-path ./lighthouse-report.html",
+    "test:uswds": "npm run build && npm run test:a11y",
+    "deploy": "gh-pages -d _site"
+  },
+  "dependencies": {
+    "@uswds/uswds": "^3.8.0",
+    "autoprefixer": "^10.4.16",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-attrs": "^4.3.1",
+    "postcss": "^8.4.33",
+    "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "eslint": "^9.33.0",
+    "gh-pages": "^6.1.1",
+    "lighthouse": "^12.8.1",
+    "pa11y": "^9.0.0",
+    "prettier": "^3.2.4",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard-scss": "^15.0.1"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "uswds",
+    "static-site",
+    "government",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
