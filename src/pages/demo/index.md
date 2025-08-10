@@ -13,20 +13,29 @@ eleventyNavigation:
 
 This section contains fully functional example pages that you can use as starting points for your own website. Each demo page shows best practices for layout, content structure, and USWDS component usage.
 
-## Available Demo Pages
+## Comprehensive Demo Pages
+
+Experience fully-featured government website templates that demonstrate best practices for federal agencies. Each page includes comprehensive examples with government-themed content, accessibility features, and implementation details.
+
+<div class="usa-alert usa-alert--info usa-alert--slim margin-bottom-4">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">These demo pages use placeholder content from fictitious agencies to demonstrate layout and functionality. All content is politically neutral and suitable for adaptation to real government websites.</p>
+  </div>
+</div>
 
 <div class="grid-row grid-gap margin-top-4">
   <div class="tablet:grid-col-6">
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">Services Page</h3>
+          <h3 class="usa-card__heading">Agency Homepage</h3>
         </div>
         <div class="usa-card__body">
-          <p>Example of a services listing page with cards, icons, and clear calls-to-action.</p>
+          <p>Complete agency homepage featuring hero sections, service highlights, news, and citizen engagement tools.</p>
+          <p class="font-body-2xs text-base-dark margin-top-1">Features: Hero, Cards, Process List, Recent News</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/services/" class="usa-button usa-button--outline">View Services Demo</a>
+          <a href="{{ '/demo/agency-homepage/' | url }}" class="usa-button">View Homepage Demo</a>
         </div>
       </div>
     </div>
@@ -36,13 +45,14 @@ This section contains fully functional example pages that you can use as startin
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">Contact Form</h3>
+          <h3 class="usa-card__heading">Services Portal</h3>
         </div>
         <div class="usa-card__body">
-          <p>Fully accessible contact form with validation, field hints, and error handling.</p>
+          <p>Comprehensive services directory with categorized listings, search functionality, and detailed service information.</p>
+          <p class="font-body-2xs text-base-dark margin-top-1">Features: Service Cards, Categories, Process Steps</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/contact/" class="usa-button usa-button--outline">View Contact Demo</a>
+          <a href="{{ '/demo/services-portal/' | url }}" class="usa-button">View Services Demo</a>
         </div>
       </div>
     </div>
@@ -54,13 +64,14 @@ This section contains fully functional example pages that you can use as startin
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">Privacy Policy</h3>
+          <h3 class="usa-card__heading">News & Announcements</h3>
         </div>
         <div class="usa-card__body">
-          <p>Template privacy policy with all required sections for federal websites.</p>
+          <p>News and announcements layout with article previews, categories, and press release formats.</p>
+          <p class="font-body-2xs text-base-dark margin-top-1">Features: Article Cards, Tags, Date Formatting</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/privacy/" class="usa-button usa-button--outline">View Privacy Demo</a>
+          <a href="{{ '/demo/news-announcements/' | url }}" class="usa-button">View News Demo</a>
         </div>
       </div>
     </div>
@@ -70,13 +81,14 @@ This section contains fully functional example pages that you can use as startin
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">FOIA Request</h3>
+          <h3 class="usa-card__heading">Forms Showcase</h3>
         </div>
         <div class="usa-card__body">
-          <p>Freedom of Information Act request page with process steps and requirements.</p>
+          <p>Comprehensive form examples including contact forms, application forms, and complex multi-step processes.</p>
+          <p class="font-body-2xs text-base-dark margin-top-1">Features: Input Types, Validation, Fieldsets, Help Text</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/foia/" class="usa-button usa-button--outline">View FOIA Demo</a>
+          <a href="{{ '/demo/forms-showcase/' | url }}" class="usa-button">View Forms Demo</a>
         </div>
       </div>
     </div>
@@ -88,29 +100,34 @@ This section contains fully functional example pages that you can use as startin
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">Accessibility Statement</h3>
+          <h3 class="usa-card__heading">Data Dashboard</h3>
         </div>
         <div class="usa-card__body">
-          <p>Comprehensive accessibility statement demonstrating commitment to Section 508.</p>
+          <p>Government data visualization and dashboard layouts with statistics, charts, and performance metrics.</p>
+          <p class="font-body-2xs text-base-dark margin-top-1">Features: Summary Cards, Tables, Data Visualization</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/accessibility/" class="usa-button usa-button--outline">View Accessibility Demo</a>
+          <a href="{{ '/demo/data-dashboard/' | url }}" class="usa-button">View Dashboard Demo</a>
         </div>
       </div>
     </div>
   </div>
   
   <div class="tablet:grid-col-6">
-    <div class="usa-card">
+    <div class="usa-card usa-card--header-first">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">No FEAR Act</h3>
+          <h3 class="usa-card__heading">Existing Pages</h3>
         </div>
         <div class="usa-card__body">
-          <p>No FEAR Act notification page with required disclosures and EEO information.</p>
-        </div>
-        <div class="usa-card__footer">
-          <a href="/no-fear-act/" class="usa-button usa-button--outline">View No FEAR Demo</a>
+          <p>View existing template pages for compliance and basic functionality:</p>
+          <ul class="usa-list usa-list--unstyled">
+            <li><a href="/services/">Services Overview</a></li>
+            <li><a href="/contact/">Contact Form</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/accessibility/">Accessibility</a></li>
+            <li><a href="/foia/">FOIA Requests</a></li>
+          </ul>
         </div>
       </div>
     </div>
