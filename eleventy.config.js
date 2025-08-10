@@ -8,10 +8,16 @@ module.exports = function(eleventyConfig) {
     'src/assets/fonts': 'assets/fonts',
     'src/assets/js': 'assets/js',
     'node_modules/@uswds/uswds/dist/img': 'assets/uswds/img',
-    'node_modules/@uswds/uswds/dist/fonts': 'assets/uswds/fonts',
+    'node_modules/@uswds/uswds/dist/fonts': 'assets/fonts',
     'node_modules/@uswds/uswds/dist/js': 'assets/uswds/js',
     'node_modules/@uswds/uswds/dist/img/usa-icons': 'assets/uswds/img/usa-icons',
-    'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/uswds/img/usa-icons-bg'
+    'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/uswds/img/usa-icons-bg',
+    'node_modules/@uswds/uswds/dist/img/hero.jpg': 'assets/img/hero.jpg',
+    'node_modules/@uswds/uswds/dist/img/circle-124.png': 'assets/uswds/img/circle-124.png',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/expand_more.svg': 'assets/img/usa-icons/expand_more.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/add.svg': 'assets/img/usa-icons/add.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/info.svg': 'assets/img/usa-icons/info.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/launch.svg': 'assets/img/usa-icons/launch.svg'
   });
   
   // Copy favicon files

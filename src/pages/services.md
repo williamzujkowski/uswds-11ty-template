@@ -69,7 +69,7 @@ We provide a comprehensive suite of services designed to meet the needs of citiz
 <div class="usa-graphic-list margin-top-5">
   <div class="usa-graphic-list__row grid-row grid-gap">
     <div class="usa-media-block tablet:grid-col">
-      <img class="usa-media-block__img" src="/assets/uswds/img/circle-124.png" alt="">
+      <img class="usa-media-block__img" src="{{ '/assets/uswds/img/circle-124.png' | url }}" alt="">
       <div class="usa-media-block__body">
         <h3 class="usa-graphic-list__heading">Business Registration</h3>
         <p>Register your business, obtain necessary licenses, and ensure compliance with federal, state, and local regulations.</p>
@@ -77,7 +77,7 @@ We provide a comprehensive suite of services designed to meet the needs of citiz
     </div>
     
     <div class="usa-media-block tablet:grid-col">
-      <img class="usa-media-block__img" src="/assets/uswds/img/circle-124.png" alt="">
+      <img class="usa-media-block__img" src="{{ '/assets/uswds/img/circle-124.png' | url }}" alt="">
       <div class="usa-media-block__body">
         <h3 class="usa-graphic-list__heading">Contracting Opportunities</h3>
         <p>Find and bid on government contracts, access procurement resources, and learn about supplier diversity programs.</p>
@@ -87,7 +87,7 @@ We provide a comprehensive suite of services designed to meet the needs of citiz
   
   <div class="usa-graphic-list__row grid-row grid-gap">
     <div class="usa-media-block tablet:grid-col">
-      <img class="usa-media-block__img" src="/assets/uswds/img/circle-124.png" alt="">
+      <img class="usa-media-block__img" src="{{ '/assets/uswds/img/circle-124.png' | url }}" alt="">
       <div class="usa-media-block__body">
         <h3 class="usa-graphic-list__heading">Tax Services</h3>
         <p>File business taxes, access tax forms and publications, and get assistance with tax-related questions.</p>
@@ -95,7 +95,7 @@ We provide a comprehensive suite of services designed to meet the needs of citiz
     </div>
     
     <div class="usa-media-block tablet:grid-col">
-      <img class="usa-media-block__img" src="/assets/uswds/img/circle-124.png" alt="">
+      <img class="usa-media-block__img" src="{{ '/assets/uswds/img/circle-124.png' | url }}" alt="">
       <div class="usa-media-block__body">
         <h3 class="usa-graphic-list__heading">Grants and Funding</h3>
         <p>Discover grant opportunities, learn about eligibility requirements, and submit applications for funding programs.</p>
