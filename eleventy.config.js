@@ -152,7 +152,9 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
-    pathPrefix: '/uswds-11ty-template/',
+    // Only set pathPrefix when building for production (when passed via command line)
+    // This allows local development to work without the prefix
+    // pathPrefix is set via --pathprefix flag in npm run build
     
     dir: {
       input: 'src',

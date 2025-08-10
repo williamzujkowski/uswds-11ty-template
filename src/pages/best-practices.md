@@ -127,26 +127,26 @@ npm run test:a11y  # Built-in accessibility testing
 #### Manual Testing Checklist
 
 **Keyboard Navigation (Required for all interactive elements):**
-- [ ] Navigate using only keyboard (Tab, Enter, Arrow keys, Space)
-- [ ] Verify logical tab order follows visual layout
-- [ ] Check all interactive elements are focusable
-- [ ] Test dropdown menus and modal dialogs
-- [ ] Ensure skip links work properly
-- [ ] Test form navigation and submission
+- Navigate using only keyboard (Tab, Enter, Arrow keys, Space)
+- Verify logical tab order follows visual layout
+- Check all interactive elements are focusable
+- Test dropdown menus and modal dialogs
+- Ensure skip links work properly
+- Test form navigation and submission
 
 **Screen Reader Testing (Test with at least one):**
-- [ ] **NVDA** (free, Windows): Download from nvaccess.org
-- [ ] **JAWS** (Windows): Most used by federal employees
-- [ ] **VoiceOver** (macOS, iOS): Built-in to Apple devices
-- [ ] **TalkBack** (Android): Built-in Android screen reader
+- **NVDA** (free, Windows): Download from nvaccess.org
+- **JAWS** (Windows): Most used by federal employees
+- **VoiceOver** (macOS, iOS): Built-in to Apple devices
+- **TalkBack** (Android): Built-in Android screen reader
 
 **Visual & Content Testing:**
-- [ ] Check color contrast with browser tools (4.5:1 normal text, 3:1 large text)
-- [ ] Zoom to 200% and verify no horizontal scroll
-- [ ] Test with Windows High Contrast mode
-- [ ] Disable CSS and verify content structure makes sense
-- [ ] Test with browser's reader mode
-- [ ] Verify all images have meaningful alt text
+- Check color contrast with browser tools (4.5:1 normal text, 3:1 large text)
+- Zoom to 200% and verify no horizontal scroll
+- Test with Windows High Contrast mode
+- Disable CSS and verify content structure makes sense
+- Test with browser's reader mode
+- Verify all images have meaningful alt text
 
 **Testing Script Example:**
 ```bash
@@ -183,13 +183,13 @@ echo "Tests complete. Check ./reports/ for detailed results."
 - Based on WCAG 2.0 Level AA (updated to WCAG 2.1)
 
 **Implementation Checklist:**
-- [ ] Semantic HTML structure
-- [ ] Proper heading hierarchy (h1-h6)
-- [ ] Alternative text for images
-- [ ] Keyboard navigation support
-- [ ] Screen reader compatibility
-- [ ] Color contrast compliance
-- [ ] Form labels and error messages
+- Semantic HTML structure
+- Proper heading hierarchy (h1-h6)
+- Alternative text for images
+- Keyboard navigation support
+- Screen reader compatibility
+- Color contrast compliance
+- Form labels and error messages
 
 ### 21st Century Integrated Digital Experience Act (IDEA)
 
@@ -449,13 +449,13 @@ Break complex information into digestible chunks.
 ### Content Auditing Process
 
 **Quarterly Content Review Checklist:**
-- [ ] Review all page content for accuracy
-- [ ] Check for outdated information
-- [ ] Verify all links work correctly
-- [ ] Update contact information
-- [ ] Review forms and processes
-- [ ] Check compliance with current regulations
-- [ ] Validate accessibility of new content
+- Review all page content for accuracy
+- Check for outdated information
+- Verify all links work correctly
+- Update contact information
+- Review forms and processes
+- Check compliance with current regulations
+- Validate accessibility of new content
 
 **Content Governance:**
 ```markdown
@@ -886,19 +886,19 @@ self.addEventListener('fetch', (event) => {
 ### Mobile Testing Checklist
 
 **Device Testing:**
-- [ ] iPhone (Safari)
-- [ ] Android (Chrome)
-- [ ] iPad (Safari)
-- [ ] Android tablet (Chrome)
-- [ ] Test landscape and portrait orientations
-- [ ] Test with different screen sizes
+- iPhone (Safari)
+- Android (Chrome)
+- iPad (Safari)
+- Android tablet (Chrome)
+- Test landscape and portrait orientations
+- Test with different screen sizes
 
 **Accessibility on Mobile:**
-- [ ] Test with VoiceOver (iOS)
-- [ ] Test with TalkBack (Android)
-- [ ] Verify touch targets are at least 44px
-- [ ] Check swipe gestures work properly
-- [ ] Test with device zoom enabled
+- Test with VoiceOver (iOS)
+- Test with TalkBack (Android)
+- Verify touch targets are at least 44px
+- Check swipe gestures work properly
+- Test with device zoom enabled
 
 ## Forms Best Practices
 
@@ -1387,28 +1387,28 @@ new PrivacyAnalytics({
 ### Regular Maintenance Schedule
 
 **Monthly Tasks:**
-- [ ] Review and update content
-- [ ] Check all forms and functionality
-- [ ] Monitor website performance
-- [ ] Review analytics for user behavior
-- [ ] Check for broken links
-- [ ] Update contact information if needed
+- Review and update content
+- Check all forms and functionality
+- Monitor website performance
+- Review analytics for user behavior
+- Check for broken links
+- Update contact information if needed
 
 **Quarterly Tasks:**
-- [ ] Comprehensive accessibility audit
-- [ ] Security vulnerability scan
-- [ ] Performance optimization review
-- [ ] Content strategy review
-- [ ] User feedback analysis
-- [ ] Mobile experience testing
+- Comprehensive accessibility audit
+- Security vulnerability scan
+- Performance optimization review
+- Content strategy review
+- User feedback analysis
+- Mobile experience testing
 
 **Annual Tasks:**
-- [ ] Complete security assessment
-- [ ] USWDS version update
-- [ ] Comprehensive user testing
-- [ ] Privacy policy review
-- [ ] Disaster recovery testing
-- [ ] Staff training updates
+- Complete security assessment
+- USWDS version update
+- Comprehensive user testing
+- Privacy policy review
+- Disaster recovery testing
+- Staff training updates
 
 **Dependency Updates:**
 ```bash
@@ -1469,35 +1469,35 @@ echo "✅ Backup complete: $BACKUP_DIR"
 ## Testing Checklist
 
 ### Pre-Launch
-- [ ] Accessibility audit (automated and manual)
-- [ ] Cross-browser testing (Chrome, Firefox, Safari, Edge)
-- [ ] Mobile device testing (iOS, Android)
-- [ ] Performance testing (Lighthouse, WebPageTest)
-- [ ] Security scan
-- [ ] Broken link check
-- [ ] Form testing (validation, submission)
-- [ ] Search functionality
-- [ ] Print styles
+- Accessibility audit (automated and manual)
+- Cross-browser testing (Chrome, Firefox, Safari, Edge)
+- Mobile device testing (iOS, Android)
+- Performance testing (Lighthouse, WebPageTest)
+- Security scan
+- Broken link check
+- Form testing (validation, submission)
+- Search functionality
+- Print styles
 
 ### Post-Launch
-- [ ] Monitor analytics
-- [ ] Check error logs
-- [ ] Review user feedback
-- [ ] Test critical user paths
-- [ ] Verify backups
-- [ ] Check SSL certificate
+- Monitor analytics
+- Check error logs
+- Review user feedback
+- Test critical user paths
+- Verify backups
+- Check SSL certificate
 
 ## Compliance Requirements
 
 ### Required Pages
 Every federal website should include:
 
-- [ ] Privacy Policy
-- [ ] Accessibility Statement
-- [ ] FOIA (Freedom of Information Act)
-- [ ] No FEAR Act Notice
-- [ ] Contact Information
-- [ ] Site Map
+- Privacy Policy
+- Accessibility Statement
+- FOIA (Freedom of Information Act)
+- No FEAR Act Notice
+- Contact Information
+- Site Map
 
 ### Legal Requirements
 - **Section 508**: Accessibility compliance
@@ -1655,20 +1655,20 @@ if (process.env.MONITOR_URL) {
 Print or bookmark this quick reference for daily use:
 
 **Before Publishing Content:**
-- [ ] Accessibility: Alt text, headings, color contrast
-- [ ] Plain language: Short sentences, common words
-- [ ] Mobile friendly: Test on phone/tablet
-- [ ] Links work: Check all internal and external links
-- [ ] Forms tested: Validation and error messages
-- [ ] Performance: Images optimized, page loads quickly
+- Accessibility: Alt text, headings, color contrast
+- Plain language: Short sentences, common words
+- Mobile friendly: Test on phone/tablet
+- Links work: Check all internal and external links
+- Forms tested: Validation and error messages
+- Performance: Images optimized, page loads quickly
 
 **Monthly Maintenance:**
-- [ ] Content review and updates
-- [ ] Accessibility scan
-- [ ] Performance check
-- [ ] Security updates
-- [ ] Analytics review
-- [ ] User feedback assessment
+- Content review and updates
+- Accessibility scan
+- Performance check
+- Security updates
+- Analytics review
+- User feedback assessment
 
 **Emergency Response:**
 1. **Site Down**: Check hosting, DNS, SSL certificate
