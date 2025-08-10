@@ -32,6 +32,9 @@ layout: layouts/base.njk
           {% if hero.button %}
           <a class="usa-button" href="{{ hero.button.href | url }}">{{ hero.button.text }}</a>
           {% endif %}
+          {% if hero.secondaryButton %}
+          <a class="usa-button usa-button--outline" href="{{ hero.secondaryButton.href | url }}">{{ hero.secondaryButton.text }}</a>
+          {% endif %}
         </div>
       </div>
     </section>

@@ -1,262 +1,337 @@
 ---
 layout: layouts/page.njk
-title: Demo Pages
-lead: Explore example pages that demonstrate how to use this template for common government website needs.
+title: Demo Sites
+lead: Experience fully functional government website examples built with this template
 permalink: /demo/
-sidenav: true
+hero:
+  alt: Live Demos
+  heading: Demo Websites
+  content: Explore complete, production-ready government website examples. Each demo showcases real-world use cases with accessibility features, responsive design, and federal compliance built in.
+  button:
+    text: View Agency Homepage
+    href: /demo/agency-homepage/
+  secondaryButton:
+    text: Browse All Demos
+    href: /demo/
 eleventyNavigation:
-  key: Demo Pages
-  order: 6
+  key: Demo Sites
+  order: 3
 ---
 
-# Demo Pages
-
-This section contains fully functional example pages that you can use as starting points for your own website. Each demo page shows best practices for layout, content structure, and USWDS component usage.
-
-## Comprehensive Demo Pages
-
-Experience fully-featured government website templates that demonstrate best practices for federal agencies. Each page includes comprehensive examples with government-themed content, accessibility features, and implementation details.
-
-<div class="usa-alert usa-alert--info usa-alert--slim margin-bottom-4">
+<div class="usa-alert usa-alert--success usa-alert--slim margin-bottom-4">
   <div class="usa-alert__body">
-    <p class="usa-alert__text">These demo pages use placeholder content from fictitious agencies to demonstrate layout and functionality. All content is politically neutral and suitable for adaptation to real government websites.</p>
+    <p class="usa-alert__text">
+      <strong>Try it yourself:</strong> All demo sites are fully interactive. Click buttons, fill forms, and explore navigation to see how everything works together.
+    </p>
   </div>
 </div>
+
+## Featured Demo Sites
 
 <div class="grid-row grid-gap margin-top-4">
-  <div class="tablet:grid-col-6">
-    <div class="usa-card">
+  <div class="tablet:grid-col-12">
+    <div class="usa-card usa-card--flag">
       <div class="usa-card__container">
-        <div class="usa-card__header">
-          <h3 class="usa-card__heading">Agency Homepage</h3>
+        <div class="usa-card__media usa-card__media--inset">
+          <div class="usa-card__img bg-primary-lighter padding-4 text-center">
+            <svg class="usa-icon usa-icon--size-7 text-primary" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#account_balance"></use>
+            </svg>
+          </div>
         </div>
         <div class="usa-card__body">
-          <p>Complete agency homepage featuring hero sections, service highlights, news, and citizen engagement tools.</p>
-          <p class="font-body-2xs text-base-dark margin-top-1">Features: Hero, Cards, Process List, Recent News</p>
+          <div class="usa-card__header">
+            <h3 class="usa-card__heading">Federal Agency Homepage</h3>
+          </div>
+          <p>A complete agency website with all the essential elements: hero sections, service highlights, news updates, and citizen engagement tools. Perfect starting point for any government agency website.</p>
+          <div class="margin-top-2">
+            <span class="usa-tag">Hero Section</span>
+            <span class="usa-tag">Service Cards</span>
+            <span class="usa-tag">News Feed</span>
+            <span class="usa-tag">Statistics</span>
+            <span class="usa-tag">Contact Info</span>
+          </div>
         </div>
         <div class="usa-card__footer">
-          <a href="{{ '/demo/agency-homepage/' | url }}" class="usa-button">View Homepage Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tablet:grid-col-6">
-    <div class="usa-card">
-      <div class="usa-card__container">
-        <div class="usa-card__header">
-          <h3 class="usa-card__heading">Services Portal</h3>
-        </div>
-        <div class="usa-card__body">
-          <p>Comprehensive services directory with categorized listings, search functionality, and detailed service information.</p>
-          <p class="font-body-2xs text-base-dark margin-top-1">Features: Service Cards, Categories, Process Steps</p>
-        </div>
-        <div class="usa-card__footer">
-          <a href="{{ '/demo/services-portal/' | url }}" class="usa-button">View Services Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-row grid-gap margin-top-2">
-  <div class="tablet:grid-col-6">
-    <div class="usa-card">
-      <div class="usa-card__container">
-        <div class="usa-card__header">
-          <h3 class="usa-card__heading">News & Announcements</h3>
-        </div>
-        <div class="usa-card__body">
-          <p>News and announcements layout with article previews, categories, and press release formats.</p>
-          <p class="font-body-2xs text-base-dark margin-top-1">Features: Article Cards, Tags, Date Formatting</p>
-        </div>
-        <div class="usa-card__footer">
-          <a href="{{ '/demo/news-announcements/' | url }}" class="usa-button">View News Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tablet:grid-col-6">
-    <div class="usa-card">
-      <div class="usa-card__container">
-        <div class="usa-card__header">
-          <h3 class="usa-card__heading">Forms Showcase</h3>
-        </div>
-        <div class="usa-card__body">
-          <p>Comprehensive form examples including contact forms, application forms, and complex multi-step processes.</p>
-          <p class="font-body-2xs text-base-dark margin-top-1">Features: Input Types, Validation, Fieldsets, Help Text</p>
-        </div>
-        <div class="usa-card__footer">
-          <a href="{{ '/demo/forms-showcase/' | url }}" class="usa-button">View Forms Demo</a>
+          <a href="{{ '/demo/agency-homepage/' | url }}" class="usa-button">View Demo</a>
+          <a href="#" class="usa-button usa-button--outline">View Source</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="grid-row grid-gap margin-top-2">
+<div class="grid-row grid-gap margin-top-3">
   <div class="tablet:grid-col-6">
     <div class="usa-card">
       <div class="usa-card__container">
         <div class="usa-card__header">
-          <h3 class="usa-card__heading">Data Dashboard</h3>
+          <h3 class="usa-card__heading">
+            <svg class="usa-icon text-primary" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#support_agent"></use>
+            </svg>
+            Services Portal
+          </h3>
         </div>
         <div class="usa-card__body">
-          <p>Government data visualization and dashboard layouts with statistics, charts, and performance metrics.</p>
-          <p class="font-body-2xs text-base-dark margin-top-1">Features: Summary Cards, Tables, Data Visualization</p>
-        </div>
-        <div class="usa-card__footer">
-          <a href="{{ '/demo/data-dashboard/' | url }}" class="usa-button">View Dashboard Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tablet:grid-col-6">
-    <div class="usa-card usa-card--header-first">
-      <div class="usa-card__container">
-        <div class="usa-card__header">
-          <h3 class="usa-card__heading">Existing Pages</h3>
-        </div>
-        <div class="usa-card__body">
-          <p>View existing template pages for compliance and basic functionality:</p>
-          <ul class="usa-list usa-list--unstyled">
-            <li><a href="/services/">Services Overview</a></li>
-            <li><a href="/contact/">Contact Form</a></li>
-            <li><a href="/privacy/">Privacy Policy</a></li>
-            <li><a href="/accessibility/">Accessibility</a></li>
-            <li><a href="/foia/">FOIA Requests</a></li>
+          <p>Comprehensive citizen services directory with categories, detailed service information, and application processes. Shows how to organize and present multiple services effectively.</p>
+          <ul class="usa-list usa-list--unstyled font-body-2xs margin-top-2">
+            <li>✓ Service categorization</li>
+            <li>✓ Accordion navigation</li>
+            <li>✓ Process workflows</li>
+            <li>✓ Fee structures</li>
           </ul>
         </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/demo/services-portal/' | url }}" class="usa-button width-full">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-6">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">
+            <svg class="usa-icon text-primary" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#insights"></use>
+            </svg>
+            Data Dashboard
+          </h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Performance metrics and transparency reporting dashboard with KPIs, data tables, and visualizations. Perfect for agencies needing to display operational data.</p>
+          <ul class="usa-list usa-list--unstyled font-body-2xs margin-top-2">
+            <li>✓ Key performance indicators</li>
+            <li>✓ Data tables & charts</li>
+            <li>✓ Regional comparisons</li>
+            <li>✓ Accessibility metrics</li>
+          </ul>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/demo/data-dashboard/' | url }}" class="usa-button width-full">View Dashboard</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Page Types Demonstrated
+<div class="grid-row grid-gap margin-top-3">
+  <div class="tablet:grid-col-6">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">
+            <svg class="usa-icon text-primary" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#article"></use>
+            </svg>
+            Forms Showcase
+          </h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Comprehensive collection of accessible form patterns including validation, multi-step processes, and complex inputs. Essential reference for any data collection needs.</p>
+          <ul class="usa-list usa-list--unstyled font-body-2xs margin-top-2">
+            <li>✓ All input types</li>
+            <li>✓ Form validation</li>
+            <li>✓ Multi-select menus</li>
+            <li>✓ Accessibility features</li>
+          </ul>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/demo/forms-showcase/' | url }}" class="usa-button width-full">View Forms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-6">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">
+            <svg class="usa-icon text-primary" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#announcement"></use>
+            </svg>
+            News & Updates
+          </h3>
+        </div>
+        <div class="usa-card__body">
+          <p>News hub layout with press releases, announcements, and public notices. Shows best practices for content organization and article presentation.</p>
+          <ul class="usa-list usa-list--unstyled font-body-2xs margin-top-2">
+            <li>✓ Article cards</li>
+            <li>✓ Category tags</li>
+            <li>✓ Date formatting</li>
+            <li>✓ Archive structure</li>
+          </ul>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/demo/news-announcements/' | url }}" class="usa-button width-full">Browse News</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-### Informational Pages
-These demos show how to present information clearly:
-- **About Page**: Organization overview with mission and values
-- **Services Page**: Service offerings with clear descriptions
-- **Resources Page**: Downloadable resources and links (Note: Currently being updated)
+## What Each Demo Includes
 
-### Interactive Pages
-Examples of user interaction patterns:
-- **Contact Form**: Multi-field form with validation
-- **FOIA Request**: Step-by-step process with forms
-- **Search Results**: Search interface with filters (coming soon)
-
-### Compliance Pages
-Required pages for federal websites:
-- **Privacy Policy**: Comprehensive privacy information
-- **Accessibility Statement**: Section 508 compliance details
-- **No FEAR Act**: Equal employment opportunity data
-- **FOIA**: Freedom of Information Act process
-
-## Key Features Demonstrated
-
-### Accessibility
-Every demo page includes:
-- Proper heading hierarchy
-- Skip navigation links
-- ARIA labels and roles
-- Keyboard navigation support
-- Screen reader optimization
-
-### Responsive Design
-All pages are fully responsive:
-- Mobile-first approach
-- Flexible grid layouts
-- Touch-friendly interfaces
-- Optimized images
-
-### USWDS Components
-See real-world usage of:
-- Forms and validation
-- Cards and layouts
-- Alerts and notifications
-- Navigation patterns
-- Typography styles
+<div class="usa-graphic-list margin-top-5">
+  <div class="usa-graphic-list__row grid-row grid-gap">
+    <div class="usa-media-block tablet:grid-col">
+      <div class="usa-media-block__img">
+        <svg class="usa-icon usa-icon--size-3 text-primary" aria-hidden="true" role="img">
+          <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#accessibility_new"></use>
+        </svg>
+      </div>
+      <div class="usa-media-block__body">
+        <h3>Full Accessibility</h3>
+        <p>Every demo meets WCAG 2.1 AA standards with proper ARIA labels, keyboard navigation, and screen reader support.</p>
+      </div>
+    </div>
+    
+    <div class="usa-media-block tablet:grid-col">
+      <div class="usa-media-block__img">
+        <svg class="usa-icon usa-icon--size-3 text-primary" aria-hidden="true" role="img">
+          <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#devices"></use>
+        </svg>
+      </div>
+      <div class="usa-media-block__body">
+        <h3>Responsive Design</h3>
+        <p>All demos work perfectly on mobile, tablet, and desktop devices with touch-friendly interfaces.</p>
+      </div>
+    </div>
+    
+    <div class="usa-media-block tablet:grid-col">
+      <div class="usa-media-block__img">
+        <svg class="usa-icon usa-icon--size-3 text-primary" aria-hidden="true" role="img">
+          <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#code"></use>
+        </svg>
+      </div>
+      <div class="usa-media-block__body">
+        <h3>Clean Code</h3>
+        <p>Well-commented source code available for every demo page. Copy, paste, and customize for your needs.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## How to Use These Demos
 
-### 1. Browse the Examples
-Click through each demo page to see how they're structured and styled.
+<ol class="usa-process-list margin-top-5">
+  <li class="usa-process-list__item">
+    <h3 class="usa-process-list__heading">Explore the Live Demos</h3>
+    <p>Click through each demo to experience the user interface and interactions. Try different screen sizes and test with keyboard navigation.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <h3 class="usa-process-list__heading">View the Source Code</h3>
+    <p>Find the corresponding <code>.md</code> files in <code>src/pages/demo/</code> directory. Each file contains the complete page structure and content.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <h3 class="usa-process-list__heading">Copy and Customize</h3>
+    <p>Use any demo as a starting point. Replace the placeholder content with your agency's information while keeping the structure intact.</p>
+  </li>
+  <li class="usa-process-list__item">
+    <h3 class="usa-process-list__heading">Test and Deploy</h3>
+    <p>Run accessibility tests, verify responsive behavior, and deploy your customized version to production.</p>
+  </li>
+</ol>
 
-### 2. View the Source
-Each page's source code is available in the GitHub repository:
-- Navigate to `src/pages/` in the repo
-- Find the corresponding `.md` or `.njk` file
-- Copy and adapt for your needs
+## Quick Reference
 
-### 3. Customize for Your Agency
-- Replace placeholder content with your agency's information
-- Update contact details in `src/_data/contacts.json`
-- Modify styles in `src/_styles/_custom.scss`
-- Add your logo and branding
+<div class="usa-table-container--scrollable margin-top-4" tabindex="0">
+  <table class="usa-table usa-table--striped">
+    <caption>Demo sites and their primary use cases</caption>
+    <thead>
+      <tr>
+        <th scope="col">Demo Site</th>
+        <th scope="col">Best For</th>
+        <th scope="col">Key Components</th>
+        <th scope="col">View</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Agency Homepage</th>
+        <td>Main agency websites</td>
+        <td>Hero, cards, news, stats</td>
+        <td><a href="{{ '/demo/agency-homepage/' | url }}">View →</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Services Portal</th>
+        <td>Service directories</td>
+        <td>Categories, accordions, process lists</td>
+        <td><a href="{{ '/demo/services-portal/' | url }}">View →</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Data Dashboard</th>
+        <td>Performance reporting</td>
+        <td>KPIs, tables, charts, metrics</td>
+        <td><a href="{{ '/demo/data-dashboard/' | url }}">View →</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Forms Showcase</th>
+        <td>Data collection</td>
+        <td>All input types, validation</td>
+        <td><a href="{{ '/demo/forms-showcase/' | url }}">View →</a></td>
+      </tr>
+      <tr>
+        <th scope="row">News & Updates</th>
+        <td>Communications</td>
+        <td>Articles, tags, dates</td>
+        <td><a href="{{ '/demo/news-announcements/' | url }}">View →</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-### 4. Test Accessibility
-Use these pages to test your accessibility tools:
-- Screen readers (NVDA, JAWS, VoiceOver)
-- Keyboard navigation
-- Color contrast analyzers
-- Automated testing tools
+## Additional Resources
 
-## Common Patterns
-
-### Hero Sections
-```html
-<section class="usa-hero">
-  <div class="grid-container">
-    <h1>Hero Heading</h1>
-    <p>Supporting text</p>
-    <a href="#" class="usa-button">Call to Action</a>
-  </div>
-</section>
-```
-
-### Card Grids
-```html
-<div class="grid-row grid-gap">
-  <div class="tablet:grid-col-4">
-    <div class="usa-card">
-      <!-- Card content -->
+<div class="usa-summary-box margin-top-4" role="region" aria-labelledby="resources-heading">
+  <div class="usa-summary-box__body">
+    <h3 class="usa-summary-box__heading" id="resources-heading">Need More Help?</h3>
+    <div class="usa-summary-box__text">
+      <ul class="usa-icon-list">
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#description"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            View detailed documentation in our <a href="{{ '/getting-started/' | url }}">Getting Started guide</a>
+          </div>
+        </li>
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#palette"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            Browse individual <a href="{{ '/components/' | url }}">USWDS components</a> with code examples
+          </div>
+        </li>
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#github"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            Get the source code from our <a href="https://github.com/williamzujkowski/uswds-11ty-template">GitHub repository</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-  <!-- More cards -->
 </div>
-```
-
-### Process Lists
-```html
-<ol class="usa-process-list">
-  <li class="usa-process-list__item">
-    <h4>Step 1</h4>
-    <p>Description</p>
-  </li>
-  <!-- More steps -->
-</ol>
-```
-
-## Creating Your Own Pages
-
-Based on these demos, you can create new pages:
-
-1. **Copy a demo page** that's similar to what you need
-2. **Update the front matter** with your page details
-3. **Replace the content** with your information
-4. **Add to navigation** in `site.json`
-5. **Test thoroughly** for accessibility and responsiveness
-
-## Need More Examples?
-
-- View the [USWDS Examples](https://designsystem.digital.gov/templates/)
-- Check our [GitHub repository]({{ site.github }}) for more code samples
-- Browse other [federal websites](https://analytics.usa.gov/) using USWDS
-- Join the [USWDS community](https://designsystem.digital.gov/about/community/) for support
 
 ---
 
-*These demo pages are starting points. Customize them to meet your agency's specific needs while maintaining accessibility and compliance standards.*
+<div class="text-center margin-top-5">
+  <p class="font-body-lg">Ready to build your own site?</p>
+  <a href="{{ '/getting-started/' | url }}" class="usa-button usa-button--big">Get Started →</a>
+  <p class="margin-top-2 font-body-2xs">
+    Or continue exploring: <a href="{{ '/components/' | url }}">View Components</a> | <a href="{{ '/best-practices/' | url }}">Best Practices</a>
+  </p>
+</div>

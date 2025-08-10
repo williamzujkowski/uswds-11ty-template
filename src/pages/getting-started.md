@@ -1,1019 +1,540 @@
 ---
 layout: layouts/page.njk
 title: Getting Started
-lead: Get your federally compliant website up and running in minutes with this comprehensive step-by-step guide.
+lead: Get your federally compliant website up and running in 5 minutes
 permalink: /getting-started/
-sidenav: true
+hero:
+  alt: Quick Start
+  heading: Getting Started
+  content: From zero to a live government website in just a few commands. Follow our streamlined setup process to build your Section 508 compliant, USWDS-powered website.
+  button:
+    text: Start Setup →
+    href: /getting-started/
 eleventyNavigation:
   key: Getting Started
   order: 2
 ---
 
-# Getting Started
+<div class="usa-alert usa-alert--success usa-alert--slim margin-bottom-4">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      <strong>Quick Setup:</strong> If you're already familiar with Node.js and npm, jump directly to the Quick Start section below.
+    </p>
+  </div>
+</div>
 
-Welcome to the USWDS 11ty Template! This comprehensive guide will help you quickly set up a federally compliant website that meets accessibility standards and government requirements.
+## Prerequisites
 
-## Prerequisites and System Requirements
+Before you begin, ensure you have:
 
-### Required Software
+<div class="grid-row grid-gap margin-bottom-4">
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Node.js 18+</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>JavaScript runtime for building</p>
+          <code>node --version</code>
+        </div>
+        <div class="usa-card__footer">
+          <a href="https://nodejs.org/" class="usa-button usa-button--outline width-full">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Git</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Version control system</p>
+          <code>git --version</code>
+        </div>
+        <div class="usa-card__footer">
+          <a href="https://git-scm.com/" class="usa-button usa-button--outline width-full">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Code Editor</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>VS Code recommended</p>
+          <code>code --version</code>
+        </div>
+        <div class="usa-card__footer">
+          <a href="https://code.visualstudio.com/" class="usa-button usa-button--outline width-full">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-Before you begin, ensure you have the following installed on your system:
+## Quick Start
 
-- **Node.js** (version 18.0.0 or higher) - [Download here](https://nodejs.org/)
-- **npm** (comes with Node.js) or **yarn** package manager
-- **Git** for version control - [Download here](https://git-scm.com/)
-- A modern code editor (we recommend [VS Code](https://code.visualstudio.com/))
+<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="false">
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="true" aria-controls="method-1">
+      Method 1: Use as GitHub Template (Recommended)
+    </button>
+  </h3>
+  <div id="method-1" class="usa-accordion__content usa-prose">
+    <ol class="usa-process-list">
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Create from Template</h4>
+        <p>Visit <a href="https://github.com/williamzujkowski/uswds-11ty-template">our GitHub repository</a> and click the green "Use this template" button to create your own copy.</p>
+      </li>
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Clone Your Repository</h4>
+        <pre><code>git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd YOUR-REPO</code></pre>
+      </li>
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Install Dependencies</h4>
+        <pre><code>npm install</code></pre>
+      </li>
+      <li class="usa-process-list__item">
+        <h4 class="usa-process-list__heading">Start Development Server</h4>
+        <pre><code>npm start</code></pre>
+        <p>Your site is now running at <strong>http://localhost:8080</strong></p>
+      </li>
+    </ol>
+  </div>
 
-### System Compatibility
-
-- **Operating Systems**: Windows 10+, macOS 10.15+, Linux (Ubuntu 18.04+)
-- **Browsers**: Chrome 88+, Firefox 85+, Safari 14+, Edge 88+
-- **RAM**: 4GB minimum, 8GB recommended
-- **Storage**: 500MB free space for project and dependencies
-
-### Verify Prerequisites
-
-Check your installed versions:
-
-```bash
-# Check Node.js version (should be 18.0.0 or higher)
-node --version
-
-# Check npm version
-npm --version
-
-# Check Git version
-git --version
-```
-
-If any of these commands fail, install the missing software before proceeding.
-
-## Quick Start (5 Minutes)
-
-### Installation Methods
-
-#### Method 1: Use as GitHub Template (Recommended for New Projects)
-
-1. **Create from Template**:
-   - Visit [{{ site.github }}]({{ site.github }})
-   - Click the green "Use this template" button
-   - Choose "Create a new repository"
-   - Name your repository (e.g., "my-agency-website")
-   - Choose public or private
-   - Click "Create repository from template"
-
-2. **Clone Your New Repository**:
-   ```bash
-   # Replace 'your-username' and 'your-repo-name'
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-
-#### Method 2: Direct Clone (For Testing)
-
-```bash
-# Clone the template directly
-git clone https://github.com/williamzujkowski/uswds-11ty-template.git my-website
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="method-2">
+      Method 2: Direct Clone
+    </button>
+  </h3>
+  <div id="method-2" class="usa-accordion__content usa-prose">
+    <pre><code>git clone https://github.com/williamzujkowski/uswds-11ty-template.git my-website
 cd my-website
-
-# Remove original git history (optional)
 rm -rf .git
 git init
-```
-
-#### Method 3: Fork (For Contributing Back)
-
-1. Visit [{{ site.github }}]({{ site.github }})
-2. Click "Fork" in the top-right corner
-3. Clone your fork:
-   ```bash
-   git clone https://github.com/your-username/uswds-11ty-template.git
-   cd uswds-11ty-template
-   ```
-
-#### Method 4: Download ZIP
-
-1. Visit [{{ site.github }}]({{ site.github }})
-2. Click "Code" > "Download ZIP"
-3. Extract the ZIP file
-4. Open terminal in the extracted folder
-
-### Install Dependencies
-
-```bash
-# Install all required packages (takes 1-2 minutes)
 npm install
-```
+npm start</code></pre>
+    <p>Visit <strong>http://localhost:8080</strong> to see your site!</p>
+  </div>
 
-This installs:
-- **Eleventy** (11ty) - Static site generator v3.1.2+
-- **USWDS** - U.S. Web Design System v3.8.0+
-- **Sass** - CSS preprocessor for styling
-- **PostCSS & Autoprefixer** - CSS processing tools
-- **ESLint & Prettier** - Code quality tools
-- **Accessibility testing tools** - pa11y, Lighthouse
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="method-3">
+      Method 3: Download ZIP
+    </button>
+  </h3>
+  <div id="method-3" class="usa-accordion__content usa-prose">
+    <ol>
+      <li>Download the <a href="https://github.com/williamzujkowski/uswds-11ty-template/archive/refs/heads/main.zip">template ZIP file</a></li>
+      <li>Extract to your desired location</li>
+      <li>Open terminal in the extracted folder</li>
+      <li>Run: <code>npm install</code></li>
+      <li>Start: <code>npm start</code></li>
+    </ol>
+  </div>
+</div>
 
-### Start Development Server
+## Your First Changes
 
-```bash
-# Start development server with hot reload
-npm start
-```
+<div class="margin-top-4 margin-bottom-4">
+  <div class="usa-card">
+    <div class="usa-card__container">
+      <div class="usa-card__header">
+        <h3 class="usa-card__heading">🎯 Try It Now</h3>
+      </div>
+      <div class="usa-card__body">
+        <ol>
+          <li><strong>Edit the homepage:</strong> Open <code>src/index.md</code> in your editor</li>
+          <li><strong>Change the title:</strong> Update the hero heading to your agency name</li>
+          <li><strong>Save the file:</strong> Your browser will auto-refresh with changes</li>
+          <li><strong>Success!</strong> You've just edited your first page</li>
+        </ol>
+        <div class="usa-alert usa-alert--info usa-alert--slim margin-top-3">
+          <div class="usa-alert__body">
+            <p class="usa-alert__text">
+              <strong>Pro tip:</strong> Keep your browser and editor side-by-side to see changes instantly!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-**Success!** Your site is now running at:
-- **Local**: http://localhost:8080
-- **Network**: Your local IP (shown in terminal)
+## Essential Configuration
 
-The development server includes:
-- **Hot reload** - Changes appear instantly
-- **Sass compilation** - Automatic CSS processing
-- **Live browser sync** - No manual refresh needed
+### 1. Update Site Information
 
-### Test Your Setup
-
-1. **Open your browser** to http://localhost:8080
-2. **Verify the site loads** with USWDS styling
-3. **Edit a file** (try `src/index.md`) and watch it update
-4. **Check the terminal** for any error messages
-
-### Build for Production
-
-```bash
-# Create optimized production build
-npm run build
-```
-
-The production-ready site will be in the `_site/` directory with:
-- Minified CSS and JavaScript
-- Optimized images
-- Clean URLs
-- Proper caching headers
-
-## Project Structure
-
-```
-uswds-11ty-template/
-├── src/                      # Source files
-│   ├── _data/               # Global data files
-│   │   ├── site.json       # Site configuration
-│   │   ├── contacts.json   # Contact information
-│   │   └── build.js        # Build-time data
-│   ├── _includes/           # Templates and partials
-│   │   ├── layouts/        # Page layouts
-│   │   └── partials/       # Reusable components
-│   ├── _styles/            # SCSS files
-│   │   ├── main.scss       # Main stylesheet
-│   │   └── _custom.scss    # Custom overrides
-│   ├── assets/             # Static assets
-│   │   ├── img/           # Images
-│   │   ├── js/            # JavaScript
-│   │   └── uswds/         # USWDS assets
-│   └── pages/              # Content pages
-├── _site/                   # Build output (gitignored)
-├── .github/                 # GitHub Actions workflows
-├── eleventy.config.js       # 11ty configuration
-├── package.json            # Dependencies and scripts
-└── README.md               # Documentation
-```
-
-## Initial Configuration Steps
-
-### Step 1: Site Information
-
-Edit `src/_data/site.json` to customize your site:
+Edit `src/_data/site.json`:
 
 ```json
 {
   "title": "Your Agency Name",
-  "description": "Brief description of your agency or website purpose",
+  "description": "Brief description of your agency",
   "url": "https://your-domain.gov",
-  "author": "Your Agency Name",
-  "email": "contact@your-agency.gov",
-  "phone": "1-800-YOUR-NUMBER",
-  "address": {
-    "street": "123 Government Street",
-    "city": "Washington",
-    "state": "DC",
-    "zip": "20001"
-  }
+  "author": "Your Agency",
+  "email": "contact@your-agency.gov"
 }
 ```
 
-### Step 2: Navigation Setup
+### 2. Customize Navigation
 
-Update the primary navigation in the same file:
+Also in `src/_data/site.json`:
 
 ```json
 {
   "navigation": {
     "primary": [
-      {
-        "text": "Home",
-        "href": "/"
-      },
-      {
-        "text": "About Us",
-        "href": "/about/"
-      },
-      {
-        "text": "Services",
-        "href": "/services/"
-      },
-      {
-        "text": "Contact",
-        "href": "/contact/"
-      }
-    ],
-    "footer": [
-      {
-        "text": "Privacy Policy",
-        "href": "/privacy/"
-      },
-      {
-        "text": "Accessibility",
-        "href": "/accessibility/"
-      }
+      { "text": "Home", "href": "/" },
+      { "text": "About", "href": "/about/" },
+      { "text": "Services", "href": "/services/" },
+      { "text": "Contact", "href": "/contact/" }
     ]
   }
 }
 ```
 
-### Step 3: Contact Information
+### 3. Create Your First Page
 
-Create or edit `src/_data/contacts.json`:
-
-```json
-{
-  "main": {
-    "phone": "1-800-123-4567",
-    "email": "contact@agency.gov",
-    "tty": "1-800-123-4568",
-    "hours": "Monday - Friday, 8:00 AM - 5:00 PM EST"
-  },
-  "emergency": {
-    "phone": "1-800-EMERGENCY",
-    "available": "24/7"
-  }
-}
-```
-
-### Step 4: Analytics Setup (Optional)
-
-For government sites, configure Digital Analytics Program (DAP):
-
-```json
-{
-  "analytics": {
-    "dap": true,
-    "ga": "YOUR-GA-ID"
-  }
-}
-```
-
-### Step 5: Social Media Links
-
-Add your agency's social media presence:
-
-```json
-{
-  "social": {
-    "twitter": "https://twitter.com/youragency",
-    "facebook": "https://facebook.com/youragency",
-    "youtube": "https://youtube.com/youragency",
-    "instagram": "https://instagram.com/youragency"
-  }
-}
-```
-
-## Creating Pages
-
-### Markdown Pages
-
-Create a new page in `src/pages/`:
+Create `src/pages/about.md`:
 
 ```markdown
 ---
 layout: layouts/page.njk
-title: Page Title
-permalink: /page-url/
-eleventyNavigation:
-  key: Page Name
-  order: 3
+title: About Us
+permalink: /about/
 ---
 
-# Page Content
+# About Our Agency
 
 Your content here...
 ```
 
-### HTML Pages
+## Available Commands
 
-For more complex layouts, use HTML:
-
-```html
----
-layout: layouts/page.njk
-title: Complex Page
----
-
-<div class="grid-row grid-gap">
-  <div class="tablet:grid-col-8">
-    <h1>Main Content</h1>
-  </div>
-  <div class="tablet:grid-col-4">
-    <aside>Sidebar</aside>
-  </div>
+<div class="usa-table-container--scrollable" tabindex="0">
+  <table class="usa-table usa-table--striped">
+    <caption>Development commands for building and testing your site</caption>
+    <thead>
+      <tr>
+        <th scope="col">Command</th>
+        <th scope="col">Description</th>
+        <th scope="col">When to Use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><code>npm start</code></th>
+        <td>Start development server with live reload</td>
+        <td>Daily development work</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>npm run build</code></th>
+        <td>Create production-ready build</td>
+        <td>Before deployment</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>npm run deploy</code></th>
+        <td>Deploy to GitHub Pages</td>
+        <td>Publishing updates</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>npm run test:a11y</code></th>
+        <td>Run accessibility tests</td>
+        <td>Before commits</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>npm run lint:js</code></th>
+        <td>Check JavaScript code quality</td>
+        <td>During development</td>
+      </tr>
+      <tr>
+        <th scope="row"><code>npm run format</code></th>
+        <td>Auto-format code with Prettier</td>
+        <td>Before commits</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+## Project Structure
+
 ```
-
-## Using USWDS Components
-
-All USWDS components are available. Here are common examples:
-
-### Alerts
-
-```html
-<div class="usa-alert usa-alert--info">
-  <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Information</h4>
-    <p class="usa-alert__text">Alert message here.</p>
-  </div>
-</div>
-```
-
-### Buttons
-
-```html
-<a href="#" class="usa-button">Default</a>
-<button class="usa-button usa-button--secondary">Secondary</button>
-<button class="usa-button usa-button--outline">Outline</button>
-```
-
-### Cards
-
-```html
-<div class="usa-card">
-  <div class="usa-card__container">
-    <div class="usa-card__header">
-      <h3 class="usa-card__heading">Card Title</h3>
-    </div>
-    <div class="usa-card__body">
-      <p>Card content</p>
-    </div>
-  </div>
-</div>
+your-website/
+├── src/                    # All source files
+│   ├── _data/             # Global data (site.json)
+│   ├── _includes/         # Templates and layouts
+│   ├── _styles/           # SCSS stylesheets
+│   ├── assets/            # Images, fonts, JS
+│   └── pages/             # Your content pages
+├── _site/                 # Built site (git-ignored)
+├── eleventy.config.js     # 11ty configuration
+└── package.json           # Dependencies & scripts
 ```
 
 ## Deployment Options
 
-### GitHub Pages (Recommended for Open Source)
-
-**Automatic Deployment:**
-
-1. **Enable GitHub Pages**:
-   - Go to repository Settings > Pages
-   - Source: "GitHub Actions"
-   - The included workflow will deploy automatically
-
-2. **Manual Deployment**:
-   ```bash
-   # Build and deploy to gh-pages branch
-   npm run deploy
-   ```
-
-3. **Custom Domain** (optional):
-   - Add CNAME file: `echo "your-domain.gov" > src/CNAME`
-   - Configure DNS to point to GitHub Pages
-
-**Build Settings:**
-- Build command: `npm run build`
-- Publish directory: `_site`
-- Node.js version: 18.x or higher
-
-### Netlify
-
-1. **Connect Repository**:
-   - Sign up at [netlify.com](https://netlify.com)
-   - Click "New site from Git"
-   - Connect your GitHub repository
-
-2. **Configure Build**:
-   - Build command: `npm run build`
-   - Publish directory: `_site`
-   - Node.js version: 18
-
-3. **Environment Variables** (if needed):
-   - Add in Netlify dashboard > Site settings > Environment variables
-
-### Cloud.gov/Federalist (For Government Sites)
-
-1. **Apply for Federalist Account**:
-   - Visit [federalist.18f.gov](https://federalist.18f.gov)
-   - Follow application process
-
-2. **Configuration**:
-   ```yaml
-   # federalist.yml (create in root)
-   headers:
-     - source: /
-       headers:
-         - key: X-Frame-Options
-           value: DENY
-         - key: X-Content-Type-Options
-           value: nosniff
-   ```
-
-### Traditional Web Hosting
-
-1. **Build the Site**:
-   ```bash
-   npm run build
-   ```
-
-2. **Upload `_site/` Directory**:
-   - Use FTP, SFTP, or hosting provider's upload tool
-   - Upload contents of `_site/` to web root
-
-3. **Configure Web Server**:
-   - Set up redirects for clean URLs
-   - Enable HTTPS
-   - Configure caching headers
-
-### Docker Deployment
-
-1. **Create Dockerfile**:
-   ```dockerfile
-   FROM node:18-alpine
-   WORKDIR /app
-   COPY package*.json ./
-   RUN npm ci --only=production
-   COPY . .
-   RUN npm run build
-   
-   FROM nginx:alpine
-   COPY --from=0 /app/_site /usr/share/nginx/html
-   ```
-
-2. **Build and Run**:
-   ```bash
-   docker build -t my-site .
-   docker run -p 80:80 my-site
-   ```
-
-## Development Workflow
-
-### Available Commands
-
-```bash
-# Development Commands
-npm start              # Start dev server with hot reload
-npm run serve          # Alternative dev server command
-npm run build          # Create production build
-npm run clean          # Remove build files
-
-# Styling Commands
-npm run sass:build     # Compile Sass to CSS
-npm run sass:watch     # Watch Sass files for changes
-
-# Quality Assurance
-npm run lint:js        # Check JavaScript with ESLint
-npm run lint:scss      # Check SCSS with Stylelint
-npm run format         # Format code with Prettier
-
-# Testing Commands
-npm run test:a11y      # Run accessibility tests
-npm run test:lighthouse # Run Lighthouse performance audit
-npm run test:uswds     # Run USWDS compliance tests
-
-# Deployment
-npm run deploy         # Deploy to GitHub Pages
-```
-
-### Recommended Workflow
-
-1. **Start Development**:
-   ```bash
-   npm start
-   ```
-
-2. **Make Changes**:
-   - Edit files in `src/` directory
-   - Changes auto-reload in browser
-   - Check terminal for any errors
-
-3. **Test Your Changes**:
-   ```bash
-   # Run all tests
-   npm run test:uswds
-   
-   # Check code quality
-   npm run lint:js
-   npm run lint:scss
-   ```
-
-4. **Build for Production**:
-   ```bash
-   npm run build
-   ```
-
-5. **Deploy** (see deployment section below)
-
-### Git Workflow (Advanced)
-
-1. **Create Feature Branch**:
-   ```bash
-   git checkout -b feature/new-page
-   ```
-
-2. **Make Changes and Commit**:
-   ```bash
-   git add .
-   git commit -m "Add new contact page"
-   ```
-
-3. **Push and Create Pull Request**:
-   ```bash
-   git push origin feature/new-page
-   # Then create PR on GitHub
-   ```
-
-4. **Merge After Review**:
-   ```bash
-   git checkout main
-   git pull origin main
-   git branch -d feature/new-page
-   ```
-
-## Common Customization Tasks
-
-### Adding a New Page
-
-1. **Create the Page File**:
-   ```bash
-   # Create new page
-   touch src/pages/new-page.md
-   ```
-
-2. **Add Front Matter**:
-   ```markdown
-   ---
-   layout: layouts/page.njk
-   title: New Page Title
-   lead: Optional subtitle or description
-   permalink: /new-page/
-   eleventyNavigation:
-     key: New Page
-     order: 5
-   ---
-   
-   # New Page Content
-   
-   Your content here...
-   ```
-
-3. **Update Navigation** (in `src/_data/site.json`):
-   ```json
-   {
-     "navigation": {
-       "primary": [
-         {
-           "text": "New Page",
-           "href": "/new-page/"
-         }
-       ]
-     }
-   }
-   ```
-
-### Adding a New Section
-
-1. **Create Section Directory**:
-   ```bash
-   mkdir src/pages/section-name
-   ```
-
-2. **Create Section Homepage**:
-   ```bash
-   touch src/pages/section-name/index.md
-   ```
-
-3. **Add Sub-pages**:
-   ```bash
-   touch src/pages/section-name/page1.md
-   touch src/pages/section-name/page2.md
-   ```
-
-### Customizing Styles
-
-1. **Override USWDS Variables** (before import in `src/_styles/main.scss`):
-   ```scss
-   // Custom USWDS settings
-   @use "uswds-core" with (
-     $theme-color-primary-lightest: #e7f6f8,
-     $theme-color-primary: #0f4c81,
-     $theme-font-sans: "Source Sans Pro"
-   );
-   ```
-
-2. **Add Custom Styles** (after USWDS import):
-   ```scss
-   // Custom component styles
-   .my-custom-component {
-     background-color: color('primary-lighter');
-     padding: units(2);
-     
-     @include at-media('tablet') {
-       padding: units(4);
-     }
-   }
-   ```
-
-3. **Create New Style Files**:
-   ```bash
-   touch src/_styles/_custom-components.scss
-   ```
-   
-   Then import in `main.scss`:
-   ```scss
-   @import "custom-components";
-   ```
-
-### Adding JavaScript Functionality
-
-1. **Create JavaScript Module**:
-   ```bash
-   touch src/assets/js/custom-features.js
-   ```
-
-2. **Add Functionality**:
-   ```javascript
-   // Initialize USWDS components
-   import { accordion } from '@uswds/uswds/js';
-   
-   document.addEventListener('DOMContentLoaded', function() {
-     // Initialize accordions
-     accordion.on();
-     
-     // Your custom code here
-     console.log('Site initialized!');
-   });
-   ```
-
-3. **Include in Main JavaScript**:
-   ```javascript
-   // In src/assets/js/main.js
-   import './custom-features.js';
-   ```
-
-### Working with Data Files
-
-1. **Create Global Data**:
-   ```bash
-   touch src/_data/team.json
-   ```
-   
-   ```json
-   {
-     "members": [
-       {
-         "name": "Jane Doe",
-         "title": "Director",
-         "email": "jane.doe@agency.gov"
-       }
-     ]
-   }
-   ```
-
-2. **Use Data in Templates**:
-   ```html
-   <ul>
-     {%- for member in team.members -%}
-     <li>{{ member.name }} - {{ member.title }}</li>
-     {%- endfor -%}
-   </ul>
-   ```
-
-### Adding Images and Assets
-
-1. **Add Images**:
-   ```bash
-   # Place images in assets directory
-   cp my-image.jpg src/assets/img/
-   ```
-
-2. **Use in Content**:
-   ```markdown
-   ![Alt text for accessibility]({{ '/assets/img/my-image.jpg' | url }})
-   ```
-
-3. **Add to Passthrough Copy** (if needed in eleventy.config.js):
-   ```javascript
-   eleventyConfig.addPassthroughCopy("src/assets/pdf");
-   ```
-
-## Best Practices
-
-### Accessibility
-- Always include alt text for images
-- Use semantic HTML elements
-- Test with keyboard navigation
-- Check color contrast ratios
-
-### Performance
-- Optimize images before adding
-- Minimize custom JavaScript
-- Use USWDS components when possible
-- Enable caching headers
-
-### Security
-- Keep dependencies updated
-- Don't commit sensitive data
-- Use environment variables for secrets
-- Enable HTTPS in production
-
-## Troubleshooting Common Issues
-
-### Installation Issues
-
-**Problem**: `npm install` fails
-```bash
-# Solution 1: Clear npm cache
-npm cache clean --force
-npm install
-
-# Solution 2: Delete lock file and reinstall
-rm package-lock.json
-rm -rf node_modules
-npm install
-
-# Solution 3: Use different Node.js version
-# Install nvm (Node Version Manager) and switch versions
-nvm install 18
-nvm use 18
-```
-
-**Problem**: Node.js version too old
-```bash
-# Check current version
-node --version
-
-# If less than 18.0.0, update Node.js
-# Visit https://nodejs.org or use nvm
-nvm install --lts
-nvm use --lts
-```
-
-### Build Errors
-
-**Problem**: Build fails with Sass errors
-```bash
-# Check Sass syntax
-npm run lint:scss
-
-# Clear build cache
-npm run clean
-npm run build
-
-# Reinstall Sass
-npm uninstall sass
-npm install sass@latest
-```
-
-**Problem**: JavaScript errors
-```bash
-# Check JavaScript syntax
-npm run lint:js
-
-# Fix automatically if possible
-npm run format
-```
-
-**Problem**: Template errors
-```bash
-# Check Nunjucks template syntax
-# Look for unclosed tags, missing variables
-# Enable debug mode for detailed errors
-DEBUG=Eleventy* npm start
-```
-
-### Development Server Issues
-
-**Problem**: Server won't start
-```bash
-# Check if port 8080 is in use
-lsof -ti:8080
-# Kill process if needed
-kill -9 $(lsof -ti:8080)
-
-# Start server on different port
-npx @11ty/eleventy --serve --port=3000
-```
-
-**Problem**: Changes not reflecting
-```bash
-# Hard refresh browser (Ctrl+Shift+R or Cmd+Shift+R)
-# Clear browser cache
-# Restart development server
-```
-
-**Problem**: CSS not updating
-```bash
-# Restart Sass watcher
-npm run sass:watch
-
-# Or restart entire dev server
-npm start
-```
-
-### Content Issues
-
-**Problem**: Pages not generating
-```bash
-# Check front matter syntax (YAML formatting)
-# Ensure permalink doesn't conflict
-# Check file extension (.md, .html, .njk)
-```
-
-**Problem**: Images not displaying
-```bash
-# Check image paths (use {{ '/assets/img/image.jpg' | url }})
-# Verify images exist in src/assets/img/
-# Check passthrough copy configuration
-```
-
-**Problem**: Navigation not updating
-```bash
-# Clear Eleventy cache
-rm -rf .cache
-
-# Restart server
-npm start
-
-# Check site.json syntax
-```
-
-### Performance Issues
-
-**Problem**: Slow build times
-```bash
-# Use incremental builds
-npx @11ty/eleventy --serve --incremental
-
-# Reduce image sizes
-# Minimize custom JavaScript
-# Check for infinite loops in templates
-```
-
-**Problem**: Large bundle size
-```bash
-# Analyze what's included
-npx @11ty/eleventy --dryrun
-
-# Optimize images
-# Remove unused USWDS components
-# Minimize custom CSS
-```
-
-### Accessibility Issues
-
-**Problem**: Accessibility tests failing
-```bash
-# Run specific tests
-npm run test:a11y
-
-# Check common issues:
-# - Missing alt text on images
-# - Missing form labels
-# - Poor color contrast
-# - Missing heading structure
-```
-
-### Getting Help
-
-If you're still having issues:
-
-1. **Check the Error Message**: Most errors provide specific information
-2. **Search Issues**: Look at [GitHub Issues]({{ site.github }}/issues)
-3. **Ask for Help**: Create a new issue with:
-   - Your operating system
-   - Node.js version (`node --version`)
-   - npm version (`npm --version`)
-   - Complete error message
-   - Steps to reproduce
-
-**Emergency Reset**:
-```bash
-# Nuclear option - start completely fresh
-rm -rf node_modules package-lock.json _site .cache
-npm install
-npm start
-```
-
-## Next Steps and Resources
-
-### Immediate Next Steps
-
-Now that your site is running, here's what to do next:
-
-1. **Customize Your Content**:
-   - Update `src/index.md` with your agency's information
-   - Edit `src/pages/about.md` with your mission and team
-   - Customize `src/pages/contact.md` with your contact information
-
-2. **Explore Available Components**:
-   - [Browse USWDS components](/components/) - Buttons, forms, navigation, etc.
-   - [Check out demo pages](/demo/) - See components in action
-   - [Review implementation examples](https://designsystem.digital.gov/components/)
-
-3. **Learn Advanced Customization**:
-   - [Customization guide](/customization/) - Theming, styling, layout
-   - [Best practices](/best-practices/) - Accessibility, performance, security
-   - [USWDS documentation](https://designsystem.digital.gov/) - Official design system docs
-
-4. **Set Up Your Workflow**:
-   - Configure your code editor with extensions
-   - Set up automated testing
-   - Plan your content structure
-   - Consider setting up staging environment
-
-### Learning Resources
-
-**Official Documentation**:
-- [U.S. Web Design System](https://designsystem.digital.gov/) - Design system documentation
-- [Eleventy Documentation](https://www.11ty.dev/docs/) - Static site generator guides
-- [Sass Documentation](https://sass-lang.com/documentation) - CSS preprocessing
-- [Nunjucks Documentation](https://mozilla.github.io/nunjucks/) - Template language
-
-**Government Resources**:
-- [Digital.gov](https://digital.gov/) - Digital government best practices
-- [18F Accessibility Guide](https://accessibility.18f.gov/) - Federal accessibility requirements
-- [Section 508](https://www.section508.gov/) - Accessibility compliance
-- [Federalist](https://federalist.18f.gov/) - Government hosting platform
-
-**Community Support**:
-- **GitHub Issues**: [Report bugs or request features]({{ site.github }}/issues)
-- **USWDS Community**: [Join discussions](https://designsystem.digital.gov/about/community/)
-- **11ty Discord**: [Get technical support](https://www.11ty.dev/docs/community/)
-- **Digital.gov Community**: [Connect with other government developers](https://digital.gov/communities/)
-
-### Recommended Tools
-
-**Code Editors**:
-- [VS Code](https://code.visualstudio.com/) with extensions:
-  - Eleventy Syntax Highlighting
-  - Sass/SCSS IntelliSense
-  - Prettier - Code formatter
-  - ESLint
-
-**Design Tools**:
-- [USWDS Design Tokens](https://designsystem.digital.gov/design-tokens/) - Official design values
-- [Sketch Cloud USWDS Library](https://www.sketch.com/s/0f3fd7ad-72b7-40d3-b696-b0ee90a1e076) - Design components
-- [Figma USWDS Components](https://www.figma.com/community/file/836611771720754351) - Design system in Figma
-
-**Testing Tools**:
-- [WAVE](https://wave.webaim.org/) - Web accessibility evaluation
-- [axe DevTools](https://www.deque.com/axe/devtools/) - Accessibility testing
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Performance audits
-
-### Project Templates and Examples
-
-**Starter Projects**:
-- Government agency website
-- Documentation site
-- News/blog site
-- Service portal
-
-**Example Sites Built with USWDS**:
-- [Vote.gov](https://vote.gov/)
-- [USA.gov](https://usa.gov/)
-- [Login.gov](https://login.gov/)
-- [USAJOBS](https://usajobs.gov/)
-
-### Getting Help
-
-When you need assistance:
-
-1. **Check this documentation first** - Most common questions are covered
-2. **Search existing issues** - Your question might already be answered
-3. **Create a detailed issue** including:
-   - What you're trying to accomplish
-   - What you expected to happen
-   - What actually happened
-   - Your environment (OS, Node version, etc.)
-   - Steps to reproduce the problem
-
-### Contributing Back
-
-Consider contributing to the community:
-
-- **Report bugs** you encounter
-- **Suggest improvements** to this template
-- **Share your customizations** that others might find useful
-- **Write documentation** or tutorials
-- **Answer questions** from other developers
+<div class="grid-row grid-gap margin-top-4">
+  <div class="tablet:grid-col-6">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">GitHub Pages (Free)</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Perfect for public agency sites. Automatic deployment with included GitHub Actions.</p>
+          <ol>
+            <li>Push to GitHub</li>
+            <li>Enable Pages in Settings</li>
+            <li>Site deploys automatically</li>
+          </ol>
+        </div>
+        <div class="usa-card__footer">
+          <pre><code>npm run deploy</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-6">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Cloud.gov / Federalist</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Official government hosting platform with FedRAMP authorization and compliance.</p>
+          <ol>
+            <li>Apply for account</li>
+            <li>Connect repository</li>
+            <li>Configure build settings</li>
+          </ol>
+        </div>
+        <div class="usa-card__footer">
+          <a href="https://federalist.18f.gov/" class="usa-button usa-button--outline width-full">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Common Tasks
+
+<div class="usa-accordion usa-accordion--bordered margin-top-4" aria-multiselectable="true">
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="task-page">
+      Adding a New Page
+    </button>
+  </h3>
+  <div id="task-page" class="usa-accordion__content usa-prose">
+    <pre><code>touch src/pages/services.md</code></pre>
+    <p>Then add front matter to the file:</p>
+    <pre><code>---
+layout: layouts/page.njk
+title: Our Services
+permalink: /services/
+---
+
+Your content goes here...</code></pre>
+  </div>
+
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="task-style">
+      Customizing Styles
+    </button>
+  </h3>
+  <div id="task-style" class="usa-accordion__content usa-prose">
+    <p>Edit <code>src/_styles/_custom.scss</code>:</p>
+    <pre><code>$theme-color-primary: #0f4c81;
+
+.my-component {
+  background: color('primary-lighter');
+  padding: units(2);
+}</code></pre>
+  </div>
+
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="task-component">
+      Using USWDS Components
+    </button>
+  </h3>
+  <div id="task-component" class="usa-accordion__content usa-prose">
+    <p>All USWDS components are available. Example alert:</p>
+    <pre><code>&lt;div class="usa-alert usa-alert--info"&gt;
+  &lt;div class="usa-alert__body"&gt;
+    &lt;h4 class="usa-alert__heading"&gt;Information&lt;/h4&gt;
+    &lt;p class="usa-alert__text"&gt;Your message here.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <p><a href="{{ '/components/' | url }}">View all components →</a></p>
+  </div>
+
+  <h3 class="usa-accordion__heading">
+    <button class="usa-accordion__button" aria-expanded="false" aria-controls="task-image">
+      Adding Images
+    </button>
+  </h3>
+  <div id="task-image" class="usa-accordion__content usa-prose">
+    <ol>
+      <li>Place image in <code>src/assets/img/</code></li>
+      <li>Reference in markdown: <code>![Alt text](&#123;&#123; '/assets/img/image.jpg' | url &#125;&#125;)</code></li>
+      <li>Or in HTML: <code>&lt;img src="&#123;&#123; '/assets/img/image.jpg' | url &#125;&#125;" alt="Description"&gt;</code></li>
+    </ol>
+  </div>
+</div>
+
+## Troubleshooting
+
+<div class="usa-alert usa-alert--warning margin-top-4 margin-bottom-2">
+  <div class="usa-alert__body">
+    <h3 class="usa-alert__heading">Common Issues & Quick Fixes</h3>
+  </div>
+</div>
+
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col-6">
+    <h4>Installation Fails</h4>
+    <pre><code>npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install</code></pre>
+  </div>
+  
+  <div class="tablet:grid-col-6">
+    <h4>Port Already in Use</h4>
+    <pre><code>lsof -ti:8080
+npx @11ty/eleventy --serve --port=3000</code></pre>
+  </div>
+</div>
+
+<div class="grid-row grid-gap margin-top-3">
+  <div class="tablet:grid-col-6">
+    <h4>Changes Not Showing</h4>
+    <ul>
+      <li>Hard refresh browser (Ctrl+Shift+R)</li>
+      <li>Restart dev server</li>
+      <li>Check terminal for errors</li>
+    </ul>
+  </div>
+  
+  <div class="tablet:grid-col-6">
+    <h4>Build Errors</h4>
+    <ul>
+      <li>Check Node version: <code>node --version</code></li>
+      <li>Update dependencies: <code>npm update</code></li>
+      <li>Enable debug: <code>DEBUG=Eleventy* npm start</code></li>
+    </ul>
+  </div>
+</div>
+
+## Next Steps
+
+<div class="grid-row grid-gap margin-top-5 margin-bottom-4">
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Explore Components</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Browse all available USWDS components with live examples.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/components/' | url }}" class="usa-button usa-button--outline width-full">View Components</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">View Demo Sites</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>See complete example websites built with this template.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/demo/' | url }}" class="usa-button usa-button--outline width-full">Browse Demos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-4">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Best Practices</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Learn accessibility, security, and performance guidelines.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="{{ '/best-practices/' | url }}" class="usa-button usa-button--outline width-full">Read Guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Get Help
+
+<div class="usa-summary-box margin-top-4" role="region" aria-labelledby="help-heading">
+  <div class="usa-summary-box__body">
+    <h3 class="usa-summary-box__heading" id="help-heading">Support Resources</h3>
+    <div class="usa-summary-box__text">
+      <ul class="usa-icon-list">
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#github"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            <strong>GitHub Issues:</strong> <a href="https://github.com/williamzujkowski/uswds-11ty-template/issues">Report bugs or request features</a>
+          </div>
+        </li>
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#forum"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            <strong>USWDS Community:</strong> <a href="https://designsystem.digital.gov/about/community/">Join discussions</a>
+          </div>
+        </li>
+        <li class="usa-icon-list__item">
+          <div class="usa-icon-list__icon text-primary">
+            <svg class="usa-icon" aria-hidden="true" role="img">
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#book"></use>
+            </svg>
+          </div>
+          <div class="usa-icon-list__content">
+            <strong>Documentation:</strong> <a href="https://designsystem.digital.gov/">Official USWDS docs</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
-**License**: This template is released under the CC0 license (public domain). You're free to use, modify, and distribute it however you need - no attribution required!
-
-**Disclaimer**: This is an open source community project and is not an official project of the United States Government. For official government web development guidance, consult [Digital.gov](https://digital.gov/) and your agency's web team.
+<div class="text-center margin-top-4">
+  <p class="font-body-lg">Ready to build something amazing?</p>
+  <a href="{{ '/demo/' | url }}" class="usa-button usa-button--big">View Demo Sites →</a>
+  <p class="margin-top-2">
+    <a href="https://github.com/williamzujkowski/uswds-11ty-template" class="usa-link">View on GitHub</a> | 
+    <a href="{{ '/license/' | url }}" class="usa-link">CC0 License (Public Domain)</a>
+  </p>
+</div>

@@ -39,20 +39,34 @@
         "href": "/getting-started/"
       },
       {
+        "text": "Demo Sites",
+        "href": "/demo/"
+      },
+      {
         "text": "Components",
         "href": "/components/"
       },
       {
-        "text": "Customization",
-        "href": "/customization/"
-      },
-      {
-        "text": "Best Practices",
-        "href": "/best-practices/"
-      },
-      {
-        "text": "Demo Pages",
-        "href": "/demo/"
+        "text": "Documentation",
+        "href": "/docs/",
+        "submenu": [
+          {
+            "text": "Customization",
+            "href": "/customization/"
+          },
+          {
+            "text": "Best Practices",
+            "href": "/best-practices/"
+          },
+          {
+            "text": "Deployment",
+            "href": "/deployment/"
+          },
+          {
+            "text": "Troubleshooting",
+            "href": "/troubleshooting/"
+          }
+        ]
       }
     ],
     "footer": [
