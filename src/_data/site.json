@@ -1,29 +1,32 @@
 {
   "title": "USWDS 11ty Template",
-  "description": "A modern, accessible website built with 11ty and the U.S. Web Design System",
-  "url": "https://example.gov",
-  "author": "Your Agency",
-  "email": "contact@example.gov",
-  "phone": "1-800-123-4567",
+  "description": "An open source template for building accessible, federally compliant websites with 11ty and the U.S. Web Design System",
+  "url": "https://williamzujkowski.github.io/uswds-11ty-template",
+  "github": "https://github.com/williamzujkowski/uswds-11ty-template",
+  "author": "USWDS 11ty Template Contributors",
+  "email": "See GitHub Issues",
+  "phone": "N/A",
+  "disclaimer": "This is an open source template project and is not an official project of the United States Government. This was created as a weekend project to help developers build federally compliant websites more easily.",
   "address": {
-    "street": "1234 Government Way",
-    "city": "Washington",
-    "state": "DC",
-    "zip": "20500"
+    "street": "Open Source Project",
+    "city": "GitHub",
+    "state": "Repository",
+    "zip": "CC0"
   },
   "social": {
-    "twitter": "https://twitter.com/youragency",
-    "facebook": "https://facebook.com/youragency",
-    "youtube": "https://youtube.com/youragency",
-    "instagram": "https://instagram.com/youragency"
+    "github": "https://github.com/williamzujkowski/uswds-11ty-template",
+    "twitter": "",
+    "facebook": "",
+    "youtube": "",
+    "instagram": ""
   },
   "analytics": {
-    "dap": true,
+    "dap": false,
     "ga": ""
   },
   "search": {
-    "endpoint": "https://search.usa.gov/search",
-    "affiliate": "your-site-handle"
+    "endpoint": "",
+    "affiliate": ""
   },
   "navigation": {
     "primary": [
@@ -32,38 +35,42 @@
         "href": "/"
       },
       {
-        "text": "About",
-        "href": "/about/"
+        "text": "Getting Started",
+        "href": "/getting-started/"
       },
       {
-        "text": "Services",
-        "href": "/services/"
+        "text": "Components",
+        "href": "/components/"
       },
       {
-        "text": "Resources",
-        "href": "/resources/"
+        "text": "Customization",
+        "href": "/customization/"
       },
       {
-        "text": "Contact",
-        "href": "/contact/"
+        "text": "Best Practices",
+        "href": "/best-practices/"
+      },
+      {
+        "text": "Demo Pages",
+        "href": "/demo/"
       }
     ],
     "footer": [
       {
-        "text": "Privacy Policy",
-        "href": "/privacy/"
+        "text": "GitHub Repository",
+        "href": "https://github.com/williamzujkowski/uswds-11ty-template"
       },
       {
-        "text": "Accessibility",
-        "href": "/accessibility/"
+        "text": "USWDS Documentation",
+        "href": "https://designsystem.digital.gov/"
       },
       {
-        "text": "FOIA",
-        "href": "/foia/"
+        "text": "11ty Documentation",
+        "href": "https://www.11ty.dev/"
       },
       {
-        "text": "No FEAR Act",
-        "href": "/no-fear-act/"
+        "text": "License (CC0)",
+        "href": "/license/"
       }
     ]
   }

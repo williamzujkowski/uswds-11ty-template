@@ -45,8 +45,8 @@
     "government",
     "template"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "USWDS 11ty Template Contributors",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=18.0.0"
   }
