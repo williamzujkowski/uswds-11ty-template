@@ -32,30 +32,19 @@ The primary configuration file is `src/_data/site.json`. Update it with your age
 
 ### Navigation Structure
 
-Customize the navigation menus in the same file:
+Navigation in this template is automatically generated from page front matter using the `eleventyNavigation` system. To customize navigation, update your page files:
 
-```json
-{
-  "navigation": {
-    "primary": [
-      {
-        "text": "Programs",
-        "href": "/programs/"
-      },
-      {
-        "text": "Services",
-        "href": "/services/",
-        "children": [
-          {
-            "text": "Service A",
-            "href": "/services/a/"
-          }
-        ]
-      }
-    ]
-  }
-}
+```markdown
+---
+title: Programs
+eleventyNavigation:
+  key: Programs        # Navigation label
+  order: 3            # Position in menu (lower = earlier)
+  parent: Services    # Optional: creates dropdown under "Services"
+---
 ```
+
+For manual navigation control, edit the header template directly in `src/_includes/partials/header.njk`.
 
 ## Branding & Styling
 

@@ -197,33 +197,7 @@ Regular paragraph text appears like this. It uses the Public Sans font family an
   </select>
 </form>
 
-### Checkboxes and Radios
-
-<form class="usa-form margin-bottom-4">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Checkbox options</legend>
-    <div class="usa-checkbox">
-      <input class="usa-checkbox__input" id="check-1" type="checkbox" name="check" value="1">
-      <label class="usa-checkbox__label" for="check-1">Option 1</label>
-    </div>
-    <div class="usa-checkbox">
-      <input class="usa-checkbox__input" id="check-2" type="checkbox" name="check" value="2">
-      <label class="usa-checkbox__label" for="check-2">Option 2</label>
-    </div>
-  </fieldset>
-  
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Radio button options</legend>
-    <div class="usa-radio">
-      <input class="usa-radio__input" id="radio-1" type="radio" name="radio" value="1">
-      <label class="usa-radio__label" for="radio-1">Option 1</label>
-    </div>
-    <div class="usa-radio">
-      <input class="usa-radio__input" id="radio-2" type="radio" name="radio" value="2">
-      <label class="usa-radio__label" for="radio-2">Option 2</label>
-    </div>
-  </fieldset>
-</form>
+<!-- This section has been moved to the comprehensive Form Controls section above -->
 
 ## Tables
 
