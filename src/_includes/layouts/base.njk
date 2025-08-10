@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Favicons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | url }}">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
   
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title or site.title }}">
@@ -76,9 +76,9 @@
   {% include "partials/footer.njk" %}
   
   <!-- USWDS JavaScript -->
-  <script src="/assets/uswds/js/uswds.min.js"></script>
+  <script src="{{ '/assets/uswds/js/uswds.min.js' | url }}"></script>
   
   <!-- Custom JavaScript -->
-  <script src="/assets/js/main.js"></script>
+  <script src="{{ '/assets/js/main.js' | url }}"></script>
 </body>
 </html>

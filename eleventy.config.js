@@ -9,7 +9,9 @@ module.exports = function(eleventyConfig) {
     'src/assets/js': 'assets/js',
     'node_modules/@uswds/uswds/dist/img': 'assets/uswds/img',
     'node_modules/@uswds/uswds/dist/fonts': 'assets/uswds/fonts',
-    'node_modules/@uswds/uswds/dist/js': 'assets/uswds/js'
+    'node_modules/@uswds/uswds/dist/js': 'assets/uswds/js',
+    'node_modules/@uswds/uswds/dist/img/usa-icons': 'assets/uswds/img/usa-icons',
+    'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/uswds/img/usa-icons-bg'
   });
   
   // Copy favicon files
@@ -123,6 +125,7 @@ module.exports = function(eleventyConfig) {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
+    pathPrefix: '/uswds-11ty-template/',
     
     dir: {
       input: 'src',
