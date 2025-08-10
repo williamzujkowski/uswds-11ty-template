@@ -2,10 +2,6 @@
 
 Thank you for your interest in contributing to the USWDS 11ty Template! We welcome contributions from the community and are grateful for any help you can provide.
 
-## Code of Conduct
-
-This project follows the [18F Code of Conduct](https://github.com/18F/code-of-conduct). Please read and follow it.
-
 ## How to Contribute
 
 ### Reporting Issues
