@@ -1,0 +1,105 @@
+{
+  "main": {
+    "phone": "1-800-123-4567",
+    "email": "contact@example.gov",
+    "tty": "1-800-123-4568",
+    "fax": "1-202-555-0100",
+    "emergency": "1-800-911-1234",
+    "afterHours": "1-800-555-9999"
+  },
+  "departments": {
+    "publicAffairs": {
+      "name": "Public Affairs",
+      "phone": "1-800-555-0101",
+      "email": "publicaffairs@example.gov"
+    },
+    "legislative": {
+      "name": "Legislative Affairs",
+      "phone": "1-800-555-0102",
+      "email": "legislative@example.gov"
+    },
+    "foia": {
+      "name": "FOIA Office",
+      "phone": "1-800-555-0103",
+      "email": "foia@example.gov",
+      "appeals": "foiaappeals@example.gov",
+      "liaison": "foialiaison@example.gov",
+      "portal": "https://foiaonline.gov",
+      "officer": {
+        "name": "Jane Smith",
+        "title": "FOIA Officer"
+      },
+      "publicLiaison": {
+        "name": "John Doe",
+        "title": "FOIA Public Liaison"
+      }
+    },
+    "civilRights": {
+      "name": "Civil Rights and EEO",
+      "phone": "1-800-555-0104",
+      "email": "civilrights@example.gov",
+      "eeo": {
+        "email": "eeo@example.gov",
+        "counselor": "eeocounselor@example.gov",
+        "director": {
+          "name": "Mary Johnson",
+          "title": "Equal Employment Opportunity Director"
+        }
+      }
+    },
+    "webmaster": {
+      "name": "Website Support",
+      "email": "webmaster@example.gov",
+      "phone": "1-800-555-0105"
+    }
+  },
+  "regional": {
+    "northeast": {
+      "name": "Northeast Region",
+      "address": "123 Federal Plaza, New York, NY 10001",
+      "phone": "1-212-555-0100",
+      "email": "northeast@example.gov"
+    },
+    "southeast": {
+      "name": "Southeast Region",
+      "address": "456 Peachtree St, Atlanta, GA 30303",
+      "phone": "1-404-555-0100",
+      "email": "southeast@example.gov"
+    },
+    "midwest": {
+      "name": "Midwest Region",
+      "address": "789 Michigan Ave, Chicago, IL 60601",
+      "phone": "1-312-555-0100",
+      "email": "midwest@example.gov"
+    },
+    "southwest": {
+      "name": "Southwest Region",
+      "address": "321 Main St, Dallas, TX 75201",
+      "phone": "1-214-555-0100",
+      "email": "southwest@example.gov"
+    },
+    "western": {
+      "name": "Western Region",
+      "address": "654 Market St, San Francisco, CA 94105",
+      "phone": "1-415-555-0100",
+      "email": "western@example.gov"
+    }
+  },
+  "language": {
+    "spanish": {
+      "name": "Español",
+      "phone": "1-800-555-2000"
+    }
+  },
+  "hours": {
+    "main": {
+      "weekdays": "8:00 AM - 4:30 PM (ET)",
+      "weekends": "Closed",
+      "holidays": "Closed on federal holidays"
+    },
+    "building": {
+      "weekdays": "7:00 AM - 6:00 PM (ET)",
+      "weekends": "Closed to public"
+    }
+  }
+}

@@ -48,10 +48,10 @@ You may request:
 ### How to Submit a Request
 
 #### Online Request Portal
-Visit our FOIA request portal at FOIAonline.gov
+Visit our FOIA request portal at [{{ contacts.departments.foia.portal }}]({{ contacts.departments.foia.portal }})
 
 #### By Email
-Email your request to: **foia@example.gov**
+Email your request to: **{{ contacts.departments.foia.email }}**
 
 #### By Mail
 {{ site.author }}  
@@ -60,7 +60,7 @@ FOIA Officer
 {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}
 
 #### By Fax
-Fax: 1-202-555-0100
+Fax: {{ contacts.main.fax }}
 
 ### Required Information for Your Request
 
@@ -87,8 +87,8 @@ Please include the following in your FOIA request:
 ### Tracking Your Request
 You will receive a tracking number to monitor your request status. You can check status:
 - Online through our FOIA portal
-- By calling our FOIA hotline: 1-800-555-0100
-- By emailing: **foia@example.gov**
+- By calling our FOIA hotline: {{ contacts.departments.foia.phone }}
+- By emailing: **{{ contacts.departments.foia.email }}**
 
 ## Fee Structure
 
@@ -148,7 +148,7 @@ Submit your appeal within 90 days to:
 {{ site.address.street }}  
 {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}
 
-Email: **foiaappeals@example.gov**
+Email: **{{ contacts.departments.foia.appeals }}**
 
 ### What to Include in Your Appeal
 - Copy of original request
@@ -184,16 +184,16 @@ Common categories include:
 ## Contact Information
 
 ### FOIA Officer
-**[Name]**  
-FOIA Officer  
-Phone: 1-800-555-0100  
-Email: **foia@example.gov**
+**{{ contacts.departments.foia.officer.name }}**  
+{{ contacts.departments.foia.officer.title }}  
+Phone: {{ contacts.departments.foia.phone }}  
+Email: **{{ contacts.departments.foia.email }}**
 
 ### FOIA Public Liaison
-**[Name]**  
-FOIA Public Liaison  
-Phone: 1-800-555-0100  
-Email: **foialiaison@example.gov**
+**{{ contacts.departments.foia.publicLiaison.name }}**  
+{{ contacts.departments.foia.publicLiaison.title }}  
+Phone: {{ contacts.departments.foia.phone }}  
+Email: **{{ contacts.departments.foia.liaison }}**
 
 *The FOIA Public Liaison assists requesters in understanding FOIA processes and can help resolve disputes.*
 
@@ -239,6 +239,6 @@ Information you provide in your FOIA request may be subject to disclosure under 
 
 ---
 
-*This page was last updated on January 10, 2025.*
+*This page was last updated on {{ build.lastUpdated }}.*
 
 *For the most current FOIA information and guidance, visit [FOIA.gov](https://www.foia.gov/).*

@@ -179,4 +179,4 @@ For more information about web accessibility:
 
 ---
 
-*This accessibility statement was last reviewed and updated on January 10, 2025.*
+*This accessibility statement was last reviewed and updated on {{ build.lastUpdated }}.*

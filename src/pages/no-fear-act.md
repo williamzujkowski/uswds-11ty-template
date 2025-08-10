@@ -84,15 +84,15 @@ Protection is provided for:
 ## {{ site.author }} EEO Contact Information
 
 ### EEO Director
-**[Name]**  
-Equal Employment Opportunity Director  
-Phone: 1-800-555-0100  
-Email: **eeo@example.gov**
+**{{ contacts.departments.civilRights.eeo.director.name }}**  
+{{ contacts.departments.civilRights.eeo.director.title }}  
+Phone: {{ contacts.departments.civilRights.phone }}  
+Email: **{{ contacts.departments.civilRights.eeo.email }}**
 
 ### EEO Counselors
 For a list of EEO Counselors and their contact information:
-- Phone: 1-800-555-0100
-- Email: **eeocounselor@example.gov**
+- Phone: {{ contacts.departments.civilRights.phone }}
+- Email: **{{ contacts.departments.civilRights.eeo.counselor }}**
 - Visit: Room 100, Main Building
 
 ### Office Hours
@@ -223,6 +223,6 @@ Managers and supervisors who engage in discrimination or retaliation may face:
 
 ---
 
-*This page was last updated on January 10, 2025.*
+*This page was last updated on {{ build.lastUpdated }}.*
 
 *For additional information about the No FEAR Act, visit [EEOC.gov](https://www.eeoc.gov/federal/nofear) or [OPM.gov](https://www.opm.gov/policy-data-oversight/employee-relations/employee-rights-appeals/).*

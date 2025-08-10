@@ -22,8 +22,8 @@ We're here to help and answer any questions you might have. Please choose the me
 **Email**: [{{ site.email }}](mailto:{{ site.email }})
 
 ### Office Hours
-**Monday - Friday**: 8:00 AM - 4:30 PM (ET)  
-**Closed**: Federal holidays and weekends
+**Monday - Friday**: {{ contacts.hours.main.weekdays }}  
+**Closed**: {{ contacts.hours.main.holidays }} and weekends
 
 *For emergency situations outside of business hours, please contact [emergency contact information].*
 
@@ -89,30 +89,30 @@ We're here to help and answer any questions you might have. Please choose the me
 
 ### Public Affairs
 For media inquiries, press releases, and public information:
-- **Phone**: [Insert Phone Number]
-- **Email**: [publicaffairs@example.gov](mailto:publicaffairs@example.gov)
+- **Phone**: {{ contacts.departments.publicAffairs.phone }}
+- **Email**: [{{ contacts.departments.publicAffairs.email }}](mailto:{{ contacts.departments.publicAffairs.email }})
 
 ### Legislative Affairs
 For congressional and legislative matters:
-- **Phone**: [Insert Phone Number]
-- **Email**: [legislative@example.gov](mailto:legislative@example.gov)
+- **Phone**: {{ contacts.departments.legislative.phone }}
+- **Email**: [{{ contacts.departments.legislative.email }}](mailto:{{ contacts.departments.legislative.email }})
 
 ### Freedom of Information Act (FOIA)
 For FOIA requests and information:
-- **Phone**: [Insert Phone Number]
-- **Email**: [foia@example.gov](mailto:foia@example.gov)
-- **FOIA Portal**: [Insert URL]
+- **Phone**: {{ contacts.departments.foia.phone }}
+- **Email**: [{{ contacts.departments.foia.email }}](mailto:{{ contacts.departments.foia.email }})
+- **FOIA Portal**: [{{ contacts.departments.foia.portal }}]({{ contacts.departments.foia.portal }})
 - [Learn more about FOIA](/foia/)
 
 ### Civil Rights and Equal Employment
 For civil rights concerns and EEO matters:
-- **Phone**: [Insert Phone Number]
-- **Email**: [civilrights@example.gov](mailto:civilrights@example.gov)
+- **Phone**: {{ contacts.departments.civilRights.phone }}
+- **Email**: [{{ contacts.departments.civilRights.email }}](mailto:{{ contacts.departments.civilRights.email }})
 - [Learn more about No FEAR Act](/no-fear-act/)
 
 ### Website and Accessibility
 For website issues and accessibility concerns:
-- **Email**: [webmaster@example.gov](mailto:webmaster@example.gov)
+- **Email**: [{{ contacts.departments.webmaster.email }}](mailto:{{ contacts.departments.webmaster.email }})
 - [Report accessibility issues](/accessibility/)
 
 ## Visit Us
@@ -140,37 +140,37 @@ For website issues and accessibility concerns:
 - **Parking**: [Parking information and restrictions]
 
 ### Building Hours
-**Monday - Friday**: 7:00 AM - 6:00 PM (ET)  
-**Weekends and Holidays**: Closed to public
+**Monday - Friday**: {{ contacts.hours.building.weekdays }}  
+**Weekends and Holidays**: {{ contacts.hours.building.weekends }}
 
 *Note: Some offices may have different hours. Please call ahead to confirm availability.*
 
 ## Regional Offices
 
-### Northeast Region
-**Address**: [Regional Office Address]  
-**Phone**: [Regional Phone Number]  
-**Email**: [northeast@example.gov](mailto:northeast@example.gov)
+### {{ contacts.regional.northeast.name }}
+**Address**: {{ contacts.regional.northeast.address }}  
+**Phone**: {{ contacts.regional.northeast.phone }}  
+**Email**: [{{ contacts.regional.northeast.email }}](mailto:{{ contacts.regional.northeast.email }})
 
-### Southeast Region
-**Address**: [Regional Office Address]  
-**Phone**: [Regional Phone Number]  
-**Email**: [southeast@example.gov](mailto:southeast@example.gov)
+### {{ contacts.regional.southeast.name }}
+**Address**: {{ contacts.regional.southeast.address }}  
+**Phone**: {{ contacts.regional.southeast.phone }}  
+**Email**: [{{ contacts.regional.southeast.email }}](mailto:{{ contacts.regional.southeast.email }})
 
-### Midwest Region
-**Address**: [Regional Office Address]  
-**Phone**: [Regional Phone Number]  
-**Email**: [midwest@example.gov](mailto:midwest@example.gov)
+### {{ contacts.regional.midwest.name }}
+**Address**: {{ contacts.regional.midwest.address }}  
+**Phone**: {{ contacts.regional.midwest.phone }}  
+**Email**: [{{ contacts.regional.midwest.email }}](mailto:{{ contacts.regional.midwest.email }})
 
-### Southwest Region
-**Address**: [Regional Office Address]  
-**Phone**: [Regional Phone Number]  
-**Email**: [southwest@example.gov](mailto:southwest@example.gov)
+### {{ contacts.regional.southwest.name }}
+**Address**: {{ contacts.regional.southwest.address }}  
+**Phone**: {{ contacts.regional.southwest.phone }}  
+**Email**: [{{ contacts.regional.southwest.email }}](mailto:{{ contacts.regional.southwest.email }})
 
-### Western Region
-**Address**: [Regional Office Address]  
-**Phone**: [Regional Phone Number]  
-**Email**: [western@example.gov](mailto:western@example.gov)
+### {{ contacts.regional.western.name }}
+**Address**: {{ contacts.regional.western.address }}  
+**Phone**: {{ contacts.regional.western.phone }}  
+**Email**: [{{ contacts.regional.western.email }}](mailto:{{ contacts.regional.western.email }})
 
 ## Connect With Us
 
@@ -216,19 +216,19 @@ We strive to respond to all inquiries promptly:
 
 ### TTY/TDD Services
 For hearing-impaired individuals:
-- **TTY**: [Insert TTY Number]
+- **TTY**: {{ contacts.main.tty }}
 - **Federal Relay Service**: 711
 
 ### Language Services
 We provide language assistance services:
-- **Spanish**: [Insert Phone Number]
+- **Spanish**: {{ contacts.language.spanish.phone }}
 - **Translation Services**: Available upon request
 - **Interpreter Services**: Available for in-person meetings
 
 ### Emergency Contact
 For urgent matters outside business hours:
-- **Emergency Line**: [Insert Emergency Number]
-- **After-Hours Contact**: [Insert Contact Information]
+- **Emergency Line**: {{ contacts.main.emergency }}
+- **After-Hours Contact**: {{ contacts.main.afterHours }}
 
 *Emergency line is for urgent matters that cannot wait until the next business day.*
 
