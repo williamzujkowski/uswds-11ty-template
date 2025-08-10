@@ -40,7 +40,7 @@ eleventyNavigation:
         <div class="usa-card__media">
           <div class="usa-card__img">
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/uswds/img/sprite.svg#account_circle"></use>
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#account_circle"></use>
             </svg>
           </div>
         </div>
@@ -61,7 +61,7 @@ eleventyNavigation:
         <div class="usa-card__media">
           <div class="usa-card__img">
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/uswds/img/sprite.svg#business"></use>
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#business"></use>
             </svg>
           </div>
         </div>
@@ -82,7 +82,7 @@ eleventyNavigation:
         <div class="usa-card__media">
           <div class="usa-card__img">
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/uswds/img/sprite.svg#school"></use>
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#school"></use>
             </svg>
           </div>
         </div>

@@ -484,7 +484,7 @@ eleventyNavigation:
           <input class="usa-input usa-input--error" id="val-email" name="val-email" type="email" value="invalid-email" aria-describedby="val-email-error" aria-invalid="true">
           <span class="usa-error-message" id="val-email-error" role="alert">
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/uswds/img/sprite.svg#warning"></use>
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#warning"></use>
             </svg>
             Enter an email address in the correct format, like name@example.gov
           </span>
@@ -497,7 +497,7 @@ eleventyNavigation:
           <input class="usa-input usa-input--success" id="val-phone" name="val-phone" type="tel" value="(555) 123-4567" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" aria-describedby="val-phone-success">
           <span class="usa-success-message" id="val-phone-success" role="status">
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-              <use xlink:href="/assets/uswds/img/sprite.svg#check"></use>
+              <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check"></use>
             </svg>
             Phone number format is valid
           </span>

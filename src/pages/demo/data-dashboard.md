@@ -242,7 +242,7 @@ eleventyNavigation:
             <td>98%</td>
             <td>
               <svg class="usa-icon text-green" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="/assets/uswds/img/sprite.svg#trending_up"></use>
+                <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#trending_up"></use>
               </svg>
               <span class="usa-sr-only">Increasing</span>
             </td>
@@ -253,7 +253,7 @@ eleventyNavigation:
             <td>97%</td>
             <td>
               <svg class="usa-icon text-green" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="/assets/uswds/img/sprite.svg#trending_up"></use>
+                <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#trending_up"></use>
               </svg>
               <span class="usa-sr-only">Increasing</span>
             </td>
@@ -264,7 +264,7 @@ eleventyNavigation:
             <td>96%</td>
             <td>
               <svg class="usa-icon text-green" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="/assets/uswds/img/sprite.svg#trending_up"></use>
+                <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#trending_up"></use>
               </svg>
               <span class="usa-sr-only">Increasing</span>
             </td>
@@ -275,7 +275,7 @@ eleventyNavigation:
             <td>99%</td>
             <td>
               <svg class="usa-icon text-green" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="/assets/uswds/img/sprite.svg#trending_up"></use>
+                <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#trending_up"></use>
               </svg>
               <span class="usa-sr-only">Increasing</span>
             </td>

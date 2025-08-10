@@ -66,9 +66,11 @@ module.exports = function(eleventyConfig) {
   // Add shortcodes
   eleventyConfig.addShortcode('currentYear', () => `${new Date().getFullYear()}`);
   
-  eleventyConfig.addShortcode('uswdsIcon', (name, size = '3') => {
+  eleventyConfig.addShortcode('uswdsIcon', function(name, size = '3') {
+    // Use the url filter to handle path prefix correctly
+    const pathPrefix = this.ctx?.eleventy?.env?.config?.pathPrefix || '';
     return `<svg class="usa-icon usa-icon--size-${size}" aria-hidden="true" role="img">
-      <use xlink:href="/assets/uswds/img/sprite.svg#${name}"></use>
+      <use xlink:href="${pathPrefix}/assets/uswds/img/sprite.svg#${name}"></use>
     </svg>`;
   });
   

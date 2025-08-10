@@ -95,7 +95,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
@@ -106,7 +106,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
@@ -117,7 +117,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
@@ -132,7 +132,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
@@ -143,7 +143,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
@@ -154,7 +154,7 @@ This template helps you meet critical federal requirements:
       <li class="usa-icon-list__item">
         <div class="usa-icon-list__icon text-green">
           <svg class="usa-icon" aria-hidden="true" role="img">
-            <use xlink:href="/assets/uswds/img/sprite.svg#check_circle"></use>
+            <use xlink:href="{{ '/assets/uswds/img/sprite.svg' | url }}#check_circle"></use>
           </svg>
         </div>
         <div class="usa-icon-list__content">
