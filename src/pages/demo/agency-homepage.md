@@ -37,7 +37,7 @@ eleventyNavigation:
       <div class="usa-card__container">
         <div class="usa-card__media">
           <div class="usa-card__img">
-            <img src="/assets/uswds/img/hero.jpg" alt="Citizen services illustration" />
+            <img src="{{ '/assets/img/hero.jpg' | url }}" alt="Citizen services illustration" />
           </div>
         </div>
         <div class="usa-card__header">
@@ -58,7 +58,7 @@ eleventyNavigation:
       <div class="usa-card__container">
         <div class="usa-card__media">
           <div class="usa-card__img">
-            <img src="/assets/uswds/img/hero.jpg" alt="Regulatory compliance illustration" />
+            <img src="{{ '/assets/img/hero.jpg' | url }}" alt="Regulatory compliance illustration" />
           </div>
         </div>
         <div class="usa-card__header">
@@ -79,7 +79,7 @@ eleventyNavigation:
       <div class="usa-card__container">
         <div class="usa-card__media">
           <div class="usa-card__img">
-            <img src="/assets/uswds/img/hero.jpg" alt="Public sector innovation illustration" />
+            <img src="{{ '/assets/img/hero.jpg' | url }}" alt="Public sector innovation illustration" />
           </div>
         </div>
         <div class="usa-card__header">

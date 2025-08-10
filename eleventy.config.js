@@ -12,6 +12,8 @@ module.exports = function(eleventyConfig) {
     'node_modules/@uswds/uswds/dist/js': 'assets/uswds/js',
     'node_modules/@uswds/uswds/dist/img/usa-icons': 'assets/uswds/img/usa-icons',
     'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/uswds/img/usa-icons-bg',
+    // Copy specific background icons that might be used
+    'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/img/usa-icons-bg',
     'node_modules/@uswds/uswds/dist/img/hero.jpg': 'assets/img/hero.jpg',
     'node_modules/@uswds/uswds/dist/img/circle-124.png': 'assets/uswds/img/circle-124.png',
     // Add missing individual icons to correct location
