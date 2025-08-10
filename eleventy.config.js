@@ -23,7 +23,9 @@ module.exports = function(eleventyConfig) {
     'node_modules/@uswds/uswds/dist/img/usa-icons/expand_more.svg': 'assets/img/usa-icons/expand_more.svg',
     'node_modules/@uswds/uswds/dist/img/usa-icons/add.svg': 'assets/img/usa-icons/add.svg',
     'node_modules/@uswds/uswds/dist/img/usa-icons/info.svg': 'assets/img/usa-icons/info.svg',
-    'node_modules/@uswds/uswds/dist/img/usa-icons/launch.svg': 'assets/img/usa-icons/launch.svg'
+    'node_modules/@uswds/uswds/dist/img/usa-icons/launch.svg': 'assets/img/usa-icons/launch.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/arrow_back.svg': 'assets/img/usa-icons/arrow_back.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/remove.svg': 'assets/img/usa-icons/remove.svg'
   });
   
   // Copy favicon files

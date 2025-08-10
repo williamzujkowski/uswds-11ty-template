@@ -157,14 +157,52 @@ eleventyNavigation:
         
         <h4>Available Programs</h4>
         <ul>
-          <li><strong>Healthcare Benefits</strong> - Medical coverage and wellness programs</li>
-          <li><strong>Educational Assistance</strong> - Tuition support and training grants</li>
-          <li><strong>Housing Support</strong> - Rental assistance and homebuyer programs</li>
-          <li><strong>Employment Services</strong> - Job placement and career development</li>
+          <li><strong>Healthcare Benefits</strong> - Medical coverage and wellness programs
+            <ul>
+              <li>Primary care coverage with $0 copays</li>
+              <li>Prescription drug assistance programs</li>
+              <li>Mental health and counseling services</li>
+              <li>Preventive care and wellness screenings</li>
+            </ul>
+          </li>
+          <li><strong>Educational Assistance</strong> - Tuition support and training grants
+            <ul>
+              <li>Federal student aid up to $50,000 annually</li>
+              <li>Vocational training certifications</li>
+              <li>Adult literacy programs</li>
+              <li>STEM education initiatives</li>
+            </ul>
+          </li>
+          <li><strong>Housing Support</strong> - Rental assistance and homebuyer programs
+            <ul>
+              <li>Section 8 housing vouchers</li>
+              <li>First-time homebuyer assistance</li>
+              <li>Emergency housing relief</li>
+              <li>Home weatherization grants</li>
+            </ul>
+          </li>
+          <li><strong>Employment Services</strong> - Job placement and career development
+            <ul>
+              <li>Skills assessment and career counseling</li>
+              <li>Job training partnerships</li>
+              <li>Resume writing assistance</li>
+              <li>Interview preparation workshops</li>
+            </ul>
+          </li>
         </ul>
         
         <h4>Eligibility Requirements</h4>
         <p>Requirements vary by program but typically include income verification, residency status, and specific qualifying conditions. Use our eligibility checker to see which programs you may qualify for.</p>
+        
+        <h4>Application Process Timeline</h4>
+        <ol>
+          <li><strong>Initial Screening</strong> (5-10 minutes) - Online eligibility questionnaire</li>
+          <li><strong>Document Collection</strong> (1-2 days) - Gather required documentation</li>
+          <li><strong>Application Submission</strong> (30-45 minutes) - Complete online forms</li>
+          <li><strong>Review Period</strong> (7-14 business days) - Agency reviews application</li>
+          <li><strong>Decision Notification</strong> (Within 24 hours) - Email and mail notification</li>
+          <li><strong>Benefit Activation</strong> (3-5 business days) - Benefits become available</li>
+        </ol>
       </div>
       <div class="tablet:grid-col-4">
         <div class="usa-summary-box" role="region" aria-labelledby="benefits-stats">
@@ -195,14 +233,82 @@ eleventyNavigation:
         
         <h4>Available Documents</h4>
         <ul>
-          <li><strong>Certified Records</strong> - Official copies of government records</li>
-          <li><strong>Verification Letters</strong> - Status confirmations and authenticity letters</li>
-          <li><strong>Historical Documents</strong> - Archive access and research services</li>
-          <li><strong>Translation Services</strong> - Official translations for legal documents</li>
+          <li><strong>Certified Records</strong> - Official copies of government records
+            <ul>
+              <li>Birth certificates (all 50 states)</li>
+              <li>Death certificates</li>
+              <li>Marriage licenses</li>
+              <li>Divorce decrees</li>
+              <li>Adoption records</li>
+              <li>Military service records (DD-214)</li>
+            </ul>
+          </li>
+          <li><strong>Verification Letters</strong> - Status confirmations and authenticity letters
+            <ul>
+              <li>Employment verification for federal workers</li>
+              <li>Social Security benefit verification</li>
+              <li>Veterans status confirmation</li>
+              <li>Citizenship verification letters</li>
+              <li>Tax compliance certificates</li>
+            </ul>
+          </li>
+          <li><strong>Historical Documents</strong> - Archive access and research services
+            <ul>
+              <li>Immigration records (1820-present)</li>
+              <li>Census records (1790-1950)</li>
+              <li>Land ownership records</li>
+              <li>Military pension files</li>
+              <li>Federal court records</li>
+            </ul>
+          </li>
+          <li><strong>Translation Services</strong> - Official translations for legal documents
+            <ul>
+              <li>Certified translations in 14 languages</li>
+              <li>Apostille services for international use</li>
+              <li>Notarization available</li>
+              <li>Rush service (24-hour turnaround)</li>
+            </ul>
+          </li>
         </ul>
         
         <h4>Security Features</h4>
         <p>All documents include digital signatures, security watermarks, and QR codes for instant verification. Documents can be delivered electronically or by certified mail.</p>
+        
+        <h4>Document Fees</h4>
+        <div class="usa-table-container--scrollable" tabindex="0">
+          <table class="usa-table usa-table--compact">
+            <caption>Standard document service fees</caption>
+            <thead>
+              <tr>
+                <th scope="col">Document Type</th>
+                <th scope="col">Standard Fee</th>
+                <th scope="col">Express Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Birth Certificate</th>
+                <td>$25</td>
+                <td>$45</td>
+              </tr>
+              <tr>
+                <th scope="row">Marriage License</th>
+                <td>$20</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <th scope="row">Military Records</th>
+                <td>$0 (Veterans)</td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <th scope="row">Translation Services</th>
+                <td>$50/page</td>
+                <td>$100/page</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="tablet:grid-col-4">
         <div class="usa-summary-box" role="region" aria-labelledby="document-stats">

@@ -78,12 +78,33 @@ eleventyNavigation:
     </label>
     <select class="usa-select" id="contact-subject" name="contact-subject" required aria-describedby="contact-subject-hint">
       <option value="">- Select a topic -</option>
-      <option value="general">General Information</option>
-      <option value="services">Government Services</option>
-      <option value="compliance">Regulatory Compliance</option>
-      <option value="technical">Technical Support</option>
-      <option value="accessibility">Accessibility Issue</option>
-      <option value="feedback">Website Feedback</option>
+      <optgroup label="Services & Benefits">
+        <option value="benefits">Benefits Enrollment</option>
+        <option value="healthcare">Healthcare Services</option>
+        <option value="social-security">Social Security</option>
+        <option value="veterans">Veterans Affairs</option>
+        <option value="housing">Housing Assistance</option>
+      </optgroup>
+      <optgroup label="Business & Compliance">
+        <option value="permits">Permits & Licenses</option>
+        <option value="compliance">Regulatory Compliance</option>
+        <option value="taxes">Tax Information</option>
+        <option value="contracts">Government Contracts</option>
+        <option value="grants">Grant Opportunities</option>
+      </optgroup>
+      <optgroup label="Documents & Records">
+        <option value="records">Official Records Request</option>
+        <option value="foia">FOIA Request</option>
+        <option value="certificates">Certificates & Documents</option>
+        <option value="verification">Document Verification</option>
+      </optgroup>
+      <optgroup label="Support & Feedback">
+        <option value="technical">Technical Support</option>
+        <option value="accessibility">Accessibility Issue</option>
+        <option value="feedback">Website Feedback</option>
+        <option value="complaint">File a Complaint</option>
+        <option value="other">Other Inquiry</option>
+      </optgroup>
     </select>
     <div class="usa-hint" id="contact-subject-hint">Choose the topic that best matches your inquiry</div>
     <span class="usa-error-message" id="contact-subject-error" role="alert"></span>
@@ -134,11 +155,30 @@ eleventyNavigation:
         </label>
         <select class="usa-select" id="app-business-type" name="app-business-type" required>
           <option value="">- Select business type -</option>
-          <option value="sole-proprietorship">Sole Proprietorship</option>
-          <option value="partnership">Partnership</option>
-          <option value="llc">Limited Liability Company</option>
-          <option value="corporation">Corporation</option>
-          <option value="non-profit">Non-Profit Organization</option>
+          <optgroup label="Individual Business">
+            <option value="sole-proprietorship">Sole Proprietorship</option>
+            <option value="independent-contractor">Independent Contractor</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Partnerships">
+            <option value="general-partnership">General Partnership</option>
+            <option value="limited-partnership">Limited Partnership (LP)</option>
+            <option value="llp">Limited Liability Partnership (LLP)</option>
+          </optgroup>
+          <optgroup label="Corporations">
+            <option value="llc">Limited Liability Company (LLC)</option>
+            <option value="s-corp">S Corporation</option>
+            <option value="c-corp">C Corporation</option>
+            <option value="b-corp">B Corporation (Benefit Corp)</option>
+            <option value="professional-corp">Professional Corporation</option>
+          </optgroup>
+          <optgroup label="Non-Profit & Other">
+            <option value="501c3">501(c)(3) Non-Profit</option>
+            <option value="501c4">501(c)(4) Social Welfare</option>
+            <option value="501c6">501(c)(6) Trade Association</option>
+            <option value="cooperative">Cooperative</option>
+            <option value="trust">Trust</option>
+          </optgroup>
         </select>
         <span class="usa-error-message" id="app-business-type-error" role="alert"></span>
       </div>
@@ -179,17 +219,72 @@ eleventyNavigation:
           State <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
         </label>
         <select class="usa-select" id="app-state" name="app-state" autocomplete="address-level1" required>
-          <option value="">- Select -</option>
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-          <option value="CA">California</option>
-          <option value="CO">Colorado</option>
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="DC">District of Columbia</option>
-          <option value="FL">Florida</option>
+          <option value="">- Select State or Territory -</option>
+          <optgroup label="States">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </optgroup>
+          <optgroup label="Territories">
+            <option value="AS">American Samoa</option>
+            <option value="GU">Guam</option>
+            <option value="MP">Northern Mariana Islands</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="VI">U.S. Virgin Islands</option>
+          </optgroup>
+          <optgroup label="Military">
+            <option value="AA">Armed Forces Americas</option>
+            <option value="AE">Armed Forces Europe</option>
+            <option value="AP">Armed Forces Pacific</option>
+          </optgroup>
         </select>
         <span class="usa-error-message" id="app-state-error" role="alert"></span>
       </div>
@@ -462,6 +557,110 @@ eleventyNavigation:
       <button class="usa-button" type="button">Previous Step</button>
       <button class="usa-button margin-left-1" type="submit">Continue to Delivery</button>
       <button class="usa-button usa-button--unstyled margin-left-2" type="button">Save Progress</button>
+    </fieldset>
+  </form>
+</div>
+
+## Advanced Form Components
+
+<div class="margin-top-5">
+  <h2>Multiselect and Combo Box Examples</h2>
+  <p>Advanced form components for complex data collection scenarios.</p>
+  
+  <form class="usa-form usa-form--large" action="#" method="post" novalidate>
+    <fieldset class="usa-fieldset">
+      <legend class="usa-legend usa-legend--large">Advanced Selection Components</legend>
+      
+      <label class="usa-label" for="multi-services">
+        Select Multiple Services <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+      </label>
+      <div class="usa-hint" id="multi-services-hint">Hold Ctrl (Windows) or Cmd (Mac) to select multiple options</div>
+      <select class="usa-select" id="multi-services" name="multi-services" multiple size="8" required aria-describedby="multi-services-hint">
+        <optgroup label="Healthcare Services">
+          <option value="primary-care">Primary Care Services</option>
+          <option value="specialty-care">Specialty Care Referrals</option>
+          <option value="mental-health">Mental Health Services</option>
+          <option value="dental">Dental Care</option>
+          <option value="vision">Vision Services</option>
+          <option value="pharmacy">Prescription Services</option>
+        </optgroup>
+        <optgroup label="Financial Assistance">
+          <option value="food-stamps">SNAP Benefits (Food Stamps)</option>
+          <option value="wic">WIC Program</option>
+          <option value="tanf">TANF Cash Assistance</option>
+          <option value="utility">Utility Bill Assistance</option>
+          <option value="childcare">Childcare Subsidies</option>
+        </optgroup>
+        <optgroup label="Education & Training">
+          <option value="adult-ed">Adult Education Programs</option>
+          <option value="job-training">Job Training Initiatives</option>
+          <option value="computer-literacy">Digital Literacy Classes</option>
+          <option value="language">ESL Classes</option>
+          <option value="ged">GED Preparation</option>
+        </optgroup>
+      </select>
+      
+      <label class="usa-label margin-top-3" for="agency-departments">
+        Select Relevant Agency Departments
+      </label>
+      <div class="usa-hint" id="agency-departments-hint">Choose all departments that apply to your request</div>
+      <select class="usa-select" id="agency-departments" name="agency-departments" multiple size="6" aria-describedby="agency-departments-hint">
+        <option value="admin">Administrative Services</option>
+        <option value="benefits">Benefits Management</option>
+        <option value="compliance">Compliance & Regulations</option>
+        <option value="customer">Customer Service</option>
+        <option value="digital">Digital Services</option>
+        <option value="enforcement">Enforcement Division</option>
+        <option value="finance">Finance & Accounting</option>
+        <option value="grants">Grants Management</option>
+        <option value="hr">Human Resources</option>
+        <option value="it">Information Technology</option>
+        <option value="legal">Legal Affairs</option>
+        <option value="operations">Operations</option>
+        <option value="outreach">Public Outreach</option>
+        <option value="policy">Policy Development</option>
+        <option value="procurement">Procurement Services</option>
+      </select>
+      
+      <label class="usa-label margin-top-3" for="priority-combo">
+        Priority Level with Custom Option
+      </label>
+      <div class="usa-combo-box">
+        <select class="usa-select" id="priority-combo" name="priority-combo">
+          <option value="">- Select or enter priority -</option>
+          <option value="emergency">Emergency - Immediate Response Required</option>
+          <option value="urgent">Urgent - Within 24 Hours</option>
+          <option value="high">High - Within 3 Business Days</option>
+          <option value="normal">Normal - Within 7 Business Days</option>
+          <option value="low">Low - Within 30 Days</option>
+          <option value="scheduled">Scheduled - Specific Date Required</option>
+        </select>
+      </div>
+      
+      <label class="usa-label margin-top-3" for="language-preference">
+        Language Preference for Communication
+      </label>
+      <select class="usa-select" id="language-preference" name="language-preference">
+        <option value="">- Select preferred language -</option>
+        <optgroup label="Most Common">
+          <option value="en">English</option>
+          <option value="es">Spanish / Español</option>
+          <option value="zh-CN">Chinese Simplified / 简体中文</option>
+          <option value="zh-TW">Chinese Traditional / 繁體中文</option>
+          <option value="vi">Vietnamese / Tiếng Việt</option>
+          <option value="ko">Korean / 한국어</option>
+        </optgroup>
+        <optgroup label="Additional Languages">
+          <option value="ar">Arabic / العربية</option>
+          <option value="fr">French / Français</option>
+          <option value="de">German / Deutsch</option>
+          <option value="hi">Hindi / हिन्दी</option>
+          <option value="ja">Japanese / 日本語</option>
+          <option value="pt">Portuguese / Português</option>
+          <option value="ru">Russian / Русский</option>
+          <option value="tl">Tagalog</option>
+        </optgroup>
+      </select>
     </fieldset>
   </form>
 </div>

@@ -220,6 +220,122 @@ eleventyNavigation:
   </div>
 </div>
 
+## Popular Online Tools
+
+<div class="grid-row grid-gap margin-bottom-4">
+  <div class="tablet:grid-col-3">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Benefits Calculator</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Estimate your eligibility for federal benefits programs in under 5 minutes.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#calculator" class="usa-button usa-button--outline width-full">Calculate Benefits</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-3">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Application Tracker</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Check the status of your permits, licenses, and benefit applications.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#tracker" class="usa-button usa-button--outline width-full">Track Application</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-3">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Document Library</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Download forms, guides, and official templates for all services.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#library" class="usa-button usa-button--outline width-full">Browse Documents</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tablet:grid-col-3">
+    <div class="usa-card">
+      <div class="usa-card__container">
+        <div class="usa-card__header">
+          <h3 class="usa-card__heading">Live Chat Support</h3>
+        </div>
+        <div class="usa-card__body">
+          <p>Get instant help from our support team. Available weekdays 8 AM - 6 PM ET.</p>
+        </div>
+        <div class="usa-card__footer">
+          <a href="#chat" class="usa-button usa-button--outline width-full">Start Chat</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Upcoming Events & Deadlines
+
+<div class="usa-table-container--scrollable margin-bottom-4" tabindex="0">
+  <table class="usa-table usa-table--borderless">
+    <caption>Important dates and upcoming events for citizens and businesses</caption>
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Event / Deadline</th>
+        <th scope="col">Category</th>
+        <th scope="col">Action Required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">April 15, 2024</th>
+        <td>Tax Filing Deadline</td>
+        <td><span class="usa-tag">Tax</span></td>
+        <td><a href="#tax-filing">File Now</a></td>
+      </tr>
+      <tr>
+        <th scope="row">April 22, 2024</th>
+        <td>Public Comment Period Closes - Digital Accessibility Standards</td>
+        <td><span class="usa-tag">Regulatory</span></td>
+        <td><a href="#comment">Submit Comment</a></td>
+      </tr>
+      <tr>
+        <th scope="row">May 1, 2024</th>
+        <td>Small Business Grant Applications Due</td>
+        <td><span class="usa-tag">Grants</span></td>
+        <td><a href="#grants">Apply</a></td>
+      </tr>
+      <tr>
+        <th scope="row">May 15, 2024</th>
+        <td>Medicare Open Enrollment Begins</td>
+        <td><span class="usa-tag">Healthcare</span></td>
+        <td><a href="#medicare">Learn More</a></td>
+      </tr>
+      <tr>
+        <th scope="row">June 1, 2024</th>
+        <td>Hurricane Season Preparedness Workshop</td>
+        <td><span class="usa-tag">Emergency</span></td>
+        <td><a href="#workshop">Register</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 ## Stay Connected
 
 <div class="usa-alert usa-alert--info" role="region" aria-labelledby="stay-connected-heading">
