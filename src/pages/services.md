@@ -2,6 +2,7 @@
 layout: layouts/page.njk
 title: Services
 lead: Explore the services and capabilities available through this platform.
+permalink: /services/
 sidenav: true
 includeInNav: true
 navOrder: 3

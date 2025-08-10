@@ -2,6 +2,7 @@
 layout: layouts/page.njk
 title: About This Template
 lead: Learn more about the USWDS 11ty Template and how it can help you build better government websites.
+permalink: /about/
 sidenav: true
 includeInNav: true
 navOrder: 2
