@@ -14,6 +14,12 @@ module.exports = function(eleventyConfig) {
     'node_modules/@uswds/uswds/dist/img/usa-icons-bg': 'assets/uswds/img/usa-icons-bg',
     'node_modules/@uswds/uswds/dist/img/hero.jpg': 'assets/img/hero.jpg',
     'node_modules/@uswds/uswds/dist/img/circle-124.png': 'assets/uswds/img/circle-124.png',
+    // Add missing individual icons to correct location
+    'node_modules/@uswds/uswds/dist/img/usa-icons/check_circle.svg': 'assets/img/usa-icons/check_circle.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/warning.svg': 'assets/img/usa-icons/warning.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/error.svg': 'assets/img/usa-icons/error.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/unfold_more.svg': 'assets/img/usa-icons/unfold_more.svg',
+    'node_modules/@uswds/uswds/dist/img/usa-icons/navigate_next.svg': 'assets/img/usa-icons/navigate_next.svg',
     'node_modules/@uswds/uswds/dist/img/usa-icons/expand_more.svg': 'assets/img/usa-icons/expand_more.svg',
     'node_modules/@uswds/uswds/dist/img/usa-icons/add.svg': 'assets/img/usa-icons/add.svg',
     'node_modules/@uswds/uswds/dist/img/usa-icons/info.svg': 'assets/img/usa-icons/info.svg',
