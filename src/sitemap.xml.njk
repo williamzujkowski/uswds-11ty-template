@@ -1,0 +1,33 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.sitemap %}
+  <url>
+    <loc>{{ site.url }}{{ item.url | url }}</loc>
+    {%- if item.date %}
+    <lastmod>{{ item.date | date('YYYY-MM-DD') }}</lastmod>
+    {%- endif %}
+    {%- if item.data.changefreq %}
+    <changefreq>{{ item.data.changefreq }}</changefreq>
+    {%- else %}
+    <changefreq>monthly</changefreq>
+    {%- endif %}
+    {%- if item.data.priority %}
+    <priority>{{ item.data.priority }}</priority>
+    {%- elif item.url == '/' %}
+    <priority>1.0</priority>
+    {%- elif item.url.startsWith('/about/') or item.url.startsWith('/services/') %}
+    <priority>0.8</priority>
+    {%- elif item.url.startsWith('/contact/') or item.url.startsWith('/resources/') %}
+    <priority>0.7</priority>
+    {%- elif item.url.startsWith('/privacy/') or item.url.startsWith('/accessibility/') or item.url.startsWith('/foia/') or item.url.startsWith('/no-fear-act/') %}
+    <priority>0.5</priority>
+    {%- else %}
+    <priority>0.6</priority>
+    {%- endif %}
+  </url>
+{%- endfor %}
+</urlset>

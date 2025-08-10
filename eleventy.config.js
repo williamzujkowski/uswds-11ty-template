@@ -36,6 +36,14 @@ module.exports = function(eleventyConfig) {
     return new Date(date).toLocaleDateString('en-US', options);
   });
   
+  eleventyConfig.addFilter('date', (date, format) => {
+    const d = new Date(date);
+    if (format === 'YYYY-MM-DD') {
+      return d.toISOString().split('T')[0];
+    }
+    return d.toLocaleDateString('en-US');
+  });
+  
   eleventyConfig.addFilter('limit', (array, limit) => {
     return array.slice(0, limit);
   });
@@ -108,6 +116,19 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.setLibrary('md', markdownLib);
   
+  // Generate sitemap.xml
+  eleventyConfig.addCollection('sitemap', function(collection) {
+    return collection.getFilteredByGlob(['src/**/*.md', 'src/**/*.njk', 'src/**/*.html'])
+      .filter(item => {
+        // Exclude items marked to be excluded from collections
+        return !item.data.eleventyExcludeFromCollections;
+      })
+      .sort((a, b) => {
+        // Sort by URL for consistent ordering
+        return a.url.localeCompare(b.url);
+      });
+  });
+
   // Browser sync config
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
