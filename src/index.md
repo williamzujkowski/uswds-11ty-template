@@ -28,7 +28,7 @@ This template provides everything you need to build a modern, accessible governm
           <p>Built with WCAG 2.1 AA standards from the ground up. Includes semantic HTML, ARIA labels, and keyboard navigation support.</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/best-practices/" class="usa-button usa-button--outline">Learn about accessibility</a>
+          <a href="{{ '/best-practices/' | url }}" class="usa-button usa-button--outline">Learn about accessibility</a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ This template provides everything you need to build a modern, accessible governm
           <p>All U.S. Web Design System components are available and ready to use. Consistent, tested, and trusted by federal agencies.</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/components/" class="usa-button usa-button--outline">Browse components</a>
+          <a href="{{ '/components/' | url }}" class="usa-button usa-button--outline">Browse components</a>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@ This template provides everything you need to build a modern, accessible governm
           <p>Static site generation means lightning-fast load times, excellent SEO, and no server vulnerabilities to worry about.</p>
         </div>
         <div class="usa-card__footer">
-          <a href="/customization/" class="usa-button usa-button--outline">Customize your site</a>
+          <a href="{{ '/customization/' | url }}" class="usa-button usa-button--outline">Customize your site</a>
         </div>
       </div>
     </div>
